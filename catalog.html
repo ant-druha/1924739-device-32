@@ -145,6 +145,23 @@
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
+
+        <form class="catalog-sorting-type">
+          <label class="catalog-sorting-type-title" for="sorting">Сортировка:</label>
+          <select class="select-control" id="sorting" name="catalog-sorting">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">По возрастанию</span>
+          </a>
+          <a class="button" href="#">
+            <span class="visually-hidden">По убыванию</span>
+          </a>
+        </form>
       </section>
     </main>
 
