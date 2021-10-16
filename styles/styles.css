@@ -278,7 +278,6 @@ figure {
 }
 
 .services {
-  /*display: flex;*/
   background-color: #F0F0F0;
   margin-bottom: 90px;
 }
@@ -624,7 +623,7 @@ figure {
 }
 
 .catalog-container {
-  /*todo ??? */
+  /*todo sorting header background ? */
   width: 760px;
   padding-left: 71px;
 }
@@ -661,7 +660,6 @@ figure {
 
 .catalog-sorting-type {
   display: flex;
-  /*margin-left: 72px;*/
   margin-left: 72px;
   margin-right: auto;
   background-color: #EBEBEB;
