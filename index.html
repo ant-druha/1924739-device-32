@@ -9,14 +9,26 @@
     <header class="page-header page-container">
       <nav class="navigation">
         <a class="navigation-logo">
-          <img class="page-header-logo" src="img/main_logo_dark.svg" width="145" height="36" alt="Логотип интернет магазина «Девайс»">
+          <img
+            class="logo"
+            src="img/main_logo_dark.svg"
+            width="145"
+            height="36"
+            alt="Логотип интернет магазина «Девайс»"
+          />
         </a>
         <ul class="user-menu-list">
           <li class="user-menu-item">
             <form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
               <label for="search" class="visually-hidden">Поиск по сайту</label>
               <button class="search button-search" type="submit" value="Найти"></button>
-              <input class="input-text input-site-search" type="search" name="search-text" id="search" placeholder="Поиск по сайту">
+              <input
+                class="input-text input-site-search"
+                type="search"
+                name="search-text"
+                id="search"
+                placeholder="Поиск по сайту"
+              />
             </form>
           </li>
           <li class="user-menu-item">
@@ -32,7 +44,9 @@
         </ul>
         <ul class="main-menu-list">
           <li class="main-menu-item">
-            <a class="main-menu-link" href="catalog.html">Каталог товаров</a>
+            <a class="main-menu-link" href="catalog.html"
+            >Каталог товаров</a
+            >
           </li>
           <li class="main-menu-item">
             <a class="main-menu-link" href="#">Доставка</a>
@@ -52,123 +66,159 @@
       <section class="page-container promoted-products">
         <h2 class="visually-hidden">Популярные товары</h2>
 
-        <div class="promoted-product-card product-card-current">
-          <div class="flex-container">
+        <ol>
+          <li class="promoted-product-card product-card-current">
+            <div class="flex-container">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </button>
+              <img class="slider-image" src="img/promo-product-1.png" width="560" height="560" alt="Продвигаемый товар">
+              <button class="slider-next" type="button">
+                <span class="visually-hidden">Следующий товар</span>
+              </button>
+            </div>
+            <div class="product-card-annotation">
+              <h3 class="product-cart-title">Порхает как бабочка, жалит как пчела!</h3>
+              <p class="product-card-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="navigation-link" href="#">Подробнее</a>
+
+              <ol class="product-card-pagination">
+                <li class="product-card-pagination-item">
+                  <!--                  <button class="product-card-pagination-button product-card-pagination-current" type="button">-->
+                  <!--                    <span class="visually-hidden">Товар 1</span>-->
+                  <!--                  </button>-->
+                  <input type="radio" id="slider-1" name="active-slider">
+                  <label class="visually-hidden" for="slider-1">
+                    Товар 1
+                  </label>
+                </li>
+                <li class="product-card-pagination-item">
+                  <!--                  <button class="product-card-pagination-button" type="button">-->
+                  <!--                    <span class="visually-hidden">Товар 2</span>-->
+                  <!--                  </button>-->
+                  <input type="radio" id="slider-1" name="active-slider">
+                  <label class="visually-hidden" for="slider-1">
+                    Товар 2
+                  </label>
+                </li>
+                <li class="product-card-pagination-item">
+                  <!--                  <button class="product-card-pagination-button" type="button">-->
+                  <!--                    <span class="visually-hidden">Товар 3</span>-->
+                  <!--                  </button>-->
+                  <input type="radio" id="slider-1" name="active-slider">
+                  <label class="visually-hidden" for="slider-1">
+                    Товар 3
+                  </label>
+                </li>
+              </ol>
+              <dl class="product-card-features">
+                <dt class="product-feature-name">Дальность полета</dt>
+                <dd class="product-card-feature-value">800 м</dd>
+                <dt class="product-feature-name">Радиус поражения</dt>
+                <dd class="product-card-feature-value">50 м</dd>
+              </dl>
+            </div>
+          </li>
+          <li class="promoted-product-card visually-hidden">
+            <img class="card-image" src="img/promo-product-2.png" width="560" height="560" alt="Продвигаемый товар">
             <button class="slider-button slider-prev" type="button">
               <span class="visually-hidden">Предыдущий товар</span>
             </button>
-            <img class="slider-image" src="img/promo-product-1.png" width="560" height="560" alt="Продвигаемый товар">
             <button class="slider-next" type="button">
               <span class="visually-hidden">Следующий товар</span>
             </button>
-          </div>
-          <div class="product-card-annotation">
-            <h3 class="product-cart-title">Порхает как бабочка, жалит как пчела!</h3>
-            <p class="product-card-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-              замаскированным под стандартную камеру.</p>
+            <h3 class="product-cart-title">Худеем правильно!</h3>
+            <p class="product-card-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+              занятия и соблюдать диету.</p>
             <a class="navigation-link" href="#">Подробнее</a>
 
             <ol class="product-card-pagination">
               <li class="product-card-pagination-item">
-                <button class="product-card-pagination-button product-card-pagination-current" type="button">
-                  <span class="visually-hidden">Товар 1</span>
-                </button>
+                <!--                <button class="product-card-pagination-button" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 1</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Первый товар
+                </label>
               </li>
               <li class="product-card-pagination-item">
-                <button class="product-card-pagination-button" type="button">
-                  <span class="visually-hidden">Товар 2</span>
-                </button>
+                <!--                <button class="product-card-pagination-button product-card-pagination-current" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 2</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Товар 2
+                </label>
               </li>
               <li class="product-card-pagination-item">
-                <button class="product-card-pagination-button" type="button">
-                  <span class="visually-hidden">Товар 3</span>
-                </button>
+                <!--                <button class="product-card-pagination-button" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 3</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Товар 3
+                </label>
               </li>
             </ol>
             <dl class="product-card-features">
-              <dt class="product-feature-name">Дальность полета</dt>
-              <dd class="product-card-feature-value">800 м</dd>
-              <dt class="product-feature-name">Радиус поражения</dt>
-              <dd class="product-card-feature-value">50 м</dd>
+              <dt class="product-feature-name">Без подзарядки</dt>
+              <dd class="product-card-feature-value">48 часов</dd>
             </dl>
-          </div>
-        </div>
+          </li>
+          <li class="promoted-product-card visually-hidden">
+            <img class="card-image" src="img/promo-product-3.png" width="560" height="560" alt="Продвигаемый товар">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар</span>
+            </button>
+            <button class="slider-next" type="button">
+              <span class="visually-hidden">Следующий товар</span>
+            </button>
+            <h3 class="product-cart-title">Делай селфи, как Бен Стиллер!</h3>
+            <p class="product-card-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+              (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <a class="navigation-link" href="#">Подробнее</a>
 
-        <div class="promoted-product-card visually-hidden">
-          <img class="card-image" src="img/promo-product-2.png" width="560" height="560" alt="Продвигаемый товар">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
-          <h3 class="product-cart-title">Худеем правильно!</h3>
-          <p class="product-card-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-            занятия и соблюдать диету.</p>
-          <a class="navigation-link" href="#">Подробнее</a>
-
-          <ol class="product-card-pagination">
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button" type="button">
-                <span class="visually-hidden">Товар 1</span>
-              </button>
-            </li>
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button product-card-pagination-current" type="button">
-                <span class="visually-hidden">Товар 2</span>
-              </button>
-            </li>
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button" type="button">
-                <span class="visually-hidden">Товар 3</span>
-              </button>
-            </li>
-          </ol>
-          <dl class="product-card-features">
-            <dt class="product-feature-name">Без подзарядки</dt>
-            <dd class="product-card-feature-value">48 часов</dd>
-          </dl>
-        </div>
-
-        <div class="promoted-product-card visually-hidden">
-          <img class="card-image" src="img/promo-product-3.png" width="560" height="560" alt="Продвигаемый товар">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="slider-next" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
-          <h3 class="product-cart-title">Делай селфи, как Бен Стиллер!</h3>
-          <p class="product-card-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь
-            (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="navigation-link" href="#">Подробнее</a>
-
-          <ol class="product-card-pagination">
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button" type="button">
-                <span class="visually-hidden">Товар 1</span>
-              </button>
-            </li>
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button" type="button">
-                <span class="visually-hidden">Товар 2</span>
-              </button>
-            </li>
-            <li class="product-card-pagination-item">
-              <button class="product-card-pagination-button product-card-pagination-current" type="button">
-                <span class="visually-hidden">Товар 3</span>
-              </button>
-            </li>
-          </ol>
-          <dl class="product-card-features">
-            <dt class="product-feature-name">Длина палки</dt>
-            <dd class="product-card-feature-value">8,5 м</dd>
-            <dt class="product-feature-name">Вес палки</dt>
-            <dd class="product-card-feature-value">5 кг</dd>
-            <dt class="product-feature-name">Метериал</dt>
-            <dd class="product-card-feature-value">Карбон</dd>
-          </dl>
-        </div>
+            <ol class="product-card-pagination">
+              <li class="product-card-pagination-item">
+                <!--                <button class="product-card-pagination-button" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 1</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Первый товар
+                </label>
+              </li>
+              <li class="product-card-pagination-item">
+                <!--                <button class="product-card-pagination-button" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 2</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Второй товар
+                </label>
+              </li>
+              <li class="product-card-pagination-item">
+                <!--                <button class="product-card-pagination-button product-card-pagination-current" type="button">-->
+                <!--                  <span class="visually-hidden">Товар 3</span>-->
+                <!--                </button>-->
+                <input type="radio" id="slider-1" name="active-slider">
+                <label class="visually-hidden" for="slider-1">
+                  Третий товар
+                </label>
+              </li>
+            </ol>
+            <dl class="product-card-features">
+              <dt class="product-feature-name">Длина палки</dt>
+              <dd class="product-card-feature-value">8,5 м</dd>
+              <dt class="product-feature-name">Вес палки</dt>
+              <dd class="product-card-feature-value">5 кг</dd>
+              <dt class="product-feature-name">Метериал</dt>
+              <dd class="product-card-feature-value">Карбон</dd>
+            </dl>
+          </li>
+        </ol>
       </section>
       <section class="page-container categories">
         <h2 class="visually-hidden">Категории товаров</h2>
@@ -318,10 +368,16 @@
               <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             </address>
             <h4 class="contacts-sub-title">Время работы</h4>
-            <ul>
-              <li>пн—пт: с 10:00 до 22:00</li>
-              <li>сб—вс: с 10:00 до 19:00</li>
-            </ul>
+            <table>
+              <tr>
+                <td>пн-пт:</td>
+                <td>с 10:00 до 22:00</td>
+              </tr>
+              <tr>
+                <td>сп-вс:</td>
+                <td>с 10:00 до 19:00</td>
+              </tr>
+            </table>
             <a class="navigation-link" href="#">Напишите нам</a>
           </li>
         </ul>
