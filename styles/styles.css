@@ -163,7 +163,8 @@ figure {
   justify-content: space-between;
   width: 1041px;
   padding: 0;
-  margin: 0 0 29px;
+  margin: 0;
+  margin-bottom: 29px;
   list-style-type: none;
 }
 
@@ -306,7 +307,8 @@ figure {
 }
 
 .services-list {
-  margin: 0 0 0 120px;
+  margin: 0;
+  margin-left: 120px;
   padding: 0;
   list-style-type: none;
 }
@@ -397,7 +399,8 @@ figure {
 .about-info-list {
   display: flex;
   padding: 50px 0 0;
-  margin: 97px 0 0;
+  margin: 0;
+  margin-top: 97px;
   justify-content: space-between;
   list-style-type: none;
 }
@@ -487,7 +490,10 @@ figure {
   color: black;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  margin: 0 auto 51px;
+  margin-top: 0;
+  margin-bottom: 51px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .newsletter-note {
@@ -499,7 +505,10 @@ figure {
   justify-content: space-between;
   align-items: baseline;
   width: 1160px;
-  margin: 62px auto 61px;
+  margin-top: 62px;
+  margin-bottom: 61px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-footer {
@@ -535,9 +544,9 @@ figure {
 
 .footer-navigation-list {
   display: flex;
-  /*margin-top: 137px;*/
   list-style-type: none;
-  margin: 0 0 53px;
+  margin: 0;
+  margin-bottom: 53px;
   padding: 0;
 }
 
@@ -555,7 +564,6 @@ figure {
   font-size: 16px;
   line-height: 30px;
   text-align: right;
-  /*margin-left: auto;*/
 }
 
 .breadcrumbs {
@@ -595,7 +603,8 @@ figure {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 44px;
+  margin: 0;
+  margin-bottom: 44px;
 }
 
 .promoted-product-card-list {
@@ -733,7 +742,8 @@ figure {
   align-items: baseline;
   background-color: #EBEBEB;
   padding: 0;
-  margin: 0 0 77px;
+  margin: 0;
+  margin-bottom: 77px;
   list-style-type: none;
 }
 
