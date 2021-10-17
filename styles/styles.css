@@ -126,14 +126,21 @@ figure {
 }
 
 .button-search {
-  border: 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  width: 160px;
   padding: 8px;
-  margin: 0 20px 0 0;
+  margin: 0;
 }
 
 .input-site-search {
   flex-grow: 1;
   min-width: 140px;
+  /*min-width: 140px;*/
 }
 
 .main-menu-list {
@@ -350,6 +357,7 @@ figure {
   /*todo: how to make a margin taking into account space after text
      in figcaption (see in figma) */
   margin-bottom: 69px;
+/*  todo: margin for the ul not figcaption ! */
 }
 
 .category-background {
