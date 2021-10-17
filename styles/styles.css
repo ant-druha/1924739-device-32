@@ -614,6 +614,11 @@ figure {
   margin: 0 0 44px;
 }
 
+.promoted-product-card-list {
+  margin: 0;
+  padding: 0;
+}
+
 .promoted-product-card {
   display: flex;
 }
