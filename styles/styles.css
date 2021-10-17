@@ -649,8 +649,19 @@ figure {
   padding: 0;
 }
 
+.slider-button {
+  border: 0;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .promoted-product-card {
   display: flex;
+  background-image: -webkit-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
+  background-image: -moz-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
+  background-image: -o-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
+  background-image: linear-gradient(to bottom, #FFE17F 26.7857%, white 0%);
 }
 
 .product-card-pagination {
@@ -663,6 +674,11 @@ figure {
   width: 360px;
   display: flex;
   flex-direction: column;
+}
+
+.product-card-features {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-container {
