@@ -333,19 +333,15 @@ figure {
 .categories-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  margin-bottom: 69px;
   list-style-type: none;
   justify-content: space-between;
 }
 
 .categories-figcaption {
   width: 160px;
-  margin-top: 33px;
-  /*todo: how to make a margin taking into account space after text
-     in figcaption (see in figma) */
-  margin-bottom: 69px;
-/*  todo: margin for the ul not figcaption ! */
 }
 
 .category-background {
@@ -354,6 +350,7 @@ figure {
   align-items: center;
   width: 160px;
   height: 160px;
+  margin-bottom: 33px;
   background-color: #FFE17F;
 }
 
