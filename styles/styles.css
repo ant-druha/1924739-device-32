@@ -558,7 +558,26 @@ figure {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  column-gap: 15px;
+}
+
+.social-item-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.social-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-phone {
