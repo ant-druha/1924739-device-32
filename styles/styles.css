@@ -86,8 +86,13 @@ figure {
   font-size: 50px;
   line-height: 50px;
   color: black;
-  /*margin: 0;*/
-  /*padding: 0;*/
+}
+
+.paragraph {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
 }
 
 .product-cart-title {
@@ -319,10 +324,6 @@ figure {
   margin-bottom: 50px;
 }
 
-.service-item-description {
-  background-color: #F0F0F0;
-}
-
 .categories-list-item-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -408,7 +409,8 @@ figure {
 }
 
 .about-info-text {
-  margin: 0 0 35px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .about-info-item {
@@ -424,7 +426,7 @@ figure {
   padding: 0;
 }
 
-.address {
+.font-style-normal {
   font-style: normal;
 }
 
