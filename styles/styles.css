@@ -412,6 +412,7 @@ figure {
   color: black;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 .shipping-companies-item {
