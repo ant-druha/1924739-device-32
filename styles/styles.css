@@ -188,7 +188,7 @@ figure {
   margin-left: auto;
 }
 
-.main-menu-item:nth-child(2) {
+.main-menu-item:nth-child(n+2) {
   margin-right: 19px;
 }
 
@@ -199,6 +199,7 @@ figure {
 
 .main-menu-item:last-child {
   margin-left: auto;
+  margin-right: 0;
 }
 
 .site-search-form {
