@@ -206,7 +206,7 @@ figure {
   width: 516px;
   margin-right: 24px;
 }
-
+/* The attributes are taken from the parent block */
 .input-text {
   font-family: inherit;
   font-size: inherit;
@@ -455,10 +455,11 @@ figure {
 .newsletter-section {
   display: flex;
   align-items: baseline;
+  margin-bottom: 53px;
 }
 
-.newsletter-section:not(:last-child) {
-  margin-bottom: 53px;
+.newsletter-section:last-child {
+  margin-bottom: 0;
 }
 
 .flex-container {
@@ -479,7 +480,7 @@ figure {
   display: flex;
 }
 
-.newsletter-email {
+.input-email {
   width: 560px;
   margin-right: 40px;
 }
@@ -491,6 +492,7 @@ figure {
 
 .button-newsletter {
   width: 260px;
+  height: 55px;
   margin-right: 171px;
 }
 
