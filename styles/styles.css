@@ -701,10 +701,10 @@ figure {
 
 .promoted-product-card {
   display: flex;
-  background-image: -webkit-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
-  background-image: -moz-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
-  background-image: -o-linear-gradient(bottom, #FFE17F 26.7857%, white 0%);
-  background-image: linear-gradient(to bottom, #FFE17F 26.7857%, white 0%);
+  background-image: -webkit-linear-gradient(bottom, #FFE17F 152px, white 0);
+  background-image: -moz-linear-gradient(bottom, #FFE17F 152px, white 0);
+  background-image: -o-linear-gradient(bottom, #FFE17F 152px, white 0);
+  background-image: linear-gradient(to bottom, #FFE17F 152px, white 0);
 }
 
 .product-card-pagination {
