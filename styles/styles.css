@@ -695,8 +695,9 @@ figure {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
   padding: 0;
   margin: 0;
   margin-bottom: 44px;
@@ -732,13 +733,17 @@ figure {
 
 .product-card {
   width: 360px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  /*todo why auto layout makes width higher than image height? */
+  grid-template-rows: 380px min-content;
+  row-gap: 32px;
 }
 
 .catalog-container {
   width: 760px;
-  padding-left: 71px;
+  padding-top: 70px;
+  padding-left: 70px;
 }
 
 .product-card-features {
@@ -829,7 +834,14 @@ figure {
   line-height: 19px;
 }
 
-.product-card-link {
+.product-card-image-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  grid-column: 1/-1;
+}
+
+.product-card-title-link {
   /*display: flex;*/
   /*flex-wrap: wrap;*/
   text-decoration: none;
@@ -854,6 +866,7 @@ figure {
   text-align: right;
   display: inline-block;
   margin-left: auto;
+  align-self: center;
 }
 
 .catalog-pagination {
