@@ -734,6 +734,9 @@ figure {
   width: 360px;
   display: grid;
   grid-template-columns: min-content auto;
+  /*todo: if fixed 380px height is not set then
+   'product-card-image-link' link content is
+   higher than image height. Why?*/
   grid-template-rows: 380px min-content;
   row-gap: 32px;
 }
@@ -874,9 +877,11 @@ figure {
   grid-column: 1/-1;
 }
 
+.product-card-image {
+  object-fit: contain;
+}
+
 .product-card-title-link {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
   text-decoration: none;
   color: black;
 }
