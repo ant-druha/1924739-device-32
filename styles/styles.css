@@ -918,10 +918,27 @@ figure {
 }
 
 .pagination-link {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   font-size: 16px;
   line-height: 19px;
+}
+
+.pagination-text {
+  display: inline-block;
+}
+
+.pagination-number {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.pagination-link-next,
+.pagination-link-prev {
+  padding: 26px;
 }
 
 .pagination-item {
@@ -929,7 +946,7 @@ figure {
   line-height: 19px;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  margin-right: 30px;
+  margin-right: 10px;
   color: rgb(68, 68, 68, 0.3);
 }
 
