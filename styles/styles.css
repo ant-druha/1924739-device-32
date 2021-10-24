@@ -733,7 +733,7 @@ figure {
 .product-card {
   width: 360px;
   display: grid;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: min-content auto;
   grid-template-rows: 380px min-content;
   row-gap: 32px;
 }
