@@ -683,15 +683,14 @@ figure {
 }
 
 .catalog-right-column {
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*flex-grow: 1;*/
+  grid-column: 3/4;
+  grid-row: 1/3;
 }
 
 .catalog-products {
-  display: flex;
-  /*justify-content: center;*/
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 330px 830px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 .product-list {
@@ -735,15 +734,17 @@ figure {
   width: 360px;
   display: grid;
   grid-template-columns: min-content max-content;
-  /*todo why auto layout makes width higher than image height? */
   grid-template-rows: 380px min-content;
   row-gap: 32px;
 }
 
 .catalog-container {
+  grid-column: 3/4;
+  grid-row: 2/3;
   width: 760px;
   padding-top: 70px;
   padding-left: 70px;
+  background-color: #FFFFFF;
 }
 
 .product-card-features {
@@ -759,30 +760,62 @@ figure {
   padding: 0;
 }
 
+.catalog-left-top-column {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: #DCDCDC;
+}
+
+.catalog-left-bottom-column {
+  background-color: #EBEBEB;
+  grid-column: 1/2;
+  grid-row: 2/-1;
+}
+
+.catalog-right-top-column {
+  grid-column: 4/-1;
+  grid-row: 1/2;
+  background-color: #EBEBEB;
+}
+
 .catalog-filter {
   background: #EBEBEB;
   color: black;
   padding-left: 60px;
+  grid-column: 2/3;
+  grid-row: 2/3;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 .catalog-form-title {
+  grid-column: 2/3;
+  grid-row: 1/2;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
+  padding-left: 60px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.margin-right-52 {
+.catalog-sorting-title {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
   margin-right: 52px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .sorting-header-container {
+  grid-column: 3/4;
+  grid-row: 1/2;
   display: flex;
   align-items: baseline;
   background-color: #EBEBEB;
