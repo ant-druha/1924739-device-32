@@ -30,6 +30,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
