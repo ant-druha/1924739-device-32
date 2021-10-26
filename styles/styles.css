@@ -953,10 +953,12 @@ figure {
   line-height: 19px;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
-  margin-right: 10px;
   color: rgb(68, 68, 68, 0.3);
 }
 
+.pagination-item + .pagination-item {
+  margin-left: 10px;
+}
 .pagination-next,
 .pagination-prev {
   font-family: "Raleway", sans-serif;
