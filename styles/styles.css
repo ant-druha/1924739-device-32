@@ -143,9 +143,23 @@ figure {
 }
 
 .navigation-logo {
+  position: relative;
   width: 145px;
   margin-bottom: 35px;
   margin-left: 1px;
+}
+
+header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 23px;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  position: absolute;
+  top: -23px;
 }
 
 .button-search {
@@ -163,15 +177,55 @@ figure {
 .input-site-search {
   flex-grow: 1;
   min-width: 140px;
-  /*min-width: 140px;*/
+  margin-left: 20px;
+  padding: 0;
+}
+
+.search-icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/lens.svg");
+  background-repeat: no-repeat;
+}
+
+.user-menu-link-cart {
+  position: relative;
+}
+
+.user-menu-link-cart::before {
+  position: absolute;
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  left: 3px;
+  top: 50%;
+  margin-top: -11px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
 }
 
 .main-menu-list {
+  position: relative;
+  left: -20px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 1041px;
+  width: 1081px;
   list-style-type: none;
 }
 
@@ -179,11 +233,16 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1041px;
+  align-items: center;
+  width: 1061px;
   padding: 0;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 14px;
   list-style-type: none;
+}
+
+.user-menu-item:first-child {
+  margin-right: 10px;
 }
 
 /* Login/Logout submenu */
@@ -191,19 +250,17 @@ figure {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 220px;
-  margin-right: 15px;
-}
-
-.user-menu-item .logout-link {
-  margin-right: 26px;
-  /*  todo: need to hardcode the margin here?  */
+  width: 257px;
+  margin-right: 14px;
 }
 
 .user-menu-item:last-child {
-  width: 141px;
   text-align: right;
   margin-left: auto;
+}
+
+.main-menu-item {
+  position: relative;
 }
 
 .main-menu-item:nth-child(n+2) {
@@ -211,8 +268,8 @@ figure {
 }
 
 .main-menu-item:first-child {
-  margin-right: 304px;
-  width: 236px;
+  /*todo not clear why so. should be 287px*/
+  margin-right: 261px;
 }
 
 .main-menu-item:last-child {
@@ -222,8 +279,8 @@ figure {
 
 .site-search-form {
   display: flex;
-  width: 516px;
-  margin-right: 24px;
+  width: 500px;
+  /*margin-right: 10px;*/
 }
 
 /* The attributes are taken from the parent block */
@@ -234,16 +291,32 @@ figure {
   color: inherit;
   background-color: inherit;
   border: none;
-  padding: 0;
+  /*padding: 0;*/
 }
 
 .user-menu-link {
   display: block;
-  padding: 0 5px;
-  box-sizing: content-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*padding-left: 44px; need to take into account inner svg is absolute position is not used */
+  padding-left: 18px;
+  padding-right: 21px;
+  box-sizing: border-box;
   color: black;
   background-color: #FFE17F;
   text-decoration: none;
+}
+
+.navigation-icon {
+  display: inline-block;
+  margin-right: 10px;
+  /*position: absolute;*/
+  /*left: 15px;*/
+  /*top: 13px;*/
+}
+
+.logout-link {
+  opacity: .3;
 }
 
 .main-menu-link {
@@ -254,9 +327,28 @@ figure {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   color: black;
   background-color: #FFE17F;
   text-decoration: none;
+}
+
+.main-menu-item:first-child .main-menu-link::after {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -25px;
+  display: inline-block;
+  content: "";
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-image: url("../img/catalog_expand_20.svg");
+  background-position: center;
 }
 
 .promoted-products {
@@ -270,11 +362,26 @@ figure {
 }
 
 .button-cart {
+  position: relative;
   font-family: inherit;
   font-size: inherit;
   color: black;
   background-color: #FFE17F;
   border: none;
+}
+
+.button-cart .navigation-icon::before
+  /*todo: before is not displaying */
+{
+  content: "t";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  z-index: 100;
 }
 
 .button-borderless {
@@ -400,6 +507,7 @@ figure {
 }
 
 .shipping-info {
+  position: relative;
   display: flex;
   width: 1160px;
   align-items: center;
@@ -411,8 +519,30 @@ figure {
   background-color: #F0F0F0;
 }
 
+.shipping-info::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  background-image: url("../img/delivery_car.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 31px;
+  background-position: center;
+}
+
 .shipping-info-button {
-  margin-right: 33px;;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 33px;
+  top: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(220, 220, 220, 0.5);
+  background-image: url("../img/info_30.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .shipping-info-text {
@@ -571,6 +701,18 @@ figure {
 
 .newsletter-note {
   background-color: inherit;
+  position: relative;
+}
+
+.newsletter-note::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/check_mark_big.svg");
+  left: -34px;
+  top: 50%;
+  margin-top: -7px;
 }
 
 .footer-container {
@@ -650,6 +792,22 @@ figure {
   display: block;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item-fb {
+  background-image: url("../img/facebook.svg");
+}
+
+.social-item-instagram {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-item-twitter {
+  background-image: url("../img/twitter.svg");
 }
 
 .social-list-item {
@@ -959,6 +1117,7 @@ figure {
 .pagination-item + .pagination-item {
   margin-left: 10px;
 }
+
 .pagination-next,
 .pagination-prev {
   font-family: "Raleway", sans-serif;
