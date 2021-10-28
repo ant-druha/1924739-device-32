@@ -811,16 +811,32 @@ header::before {
   background-color: #FFC700;
 }
 
-.footer-container::after {
+.footer-htmlacademy-link {
   position: absolute;
   content: "";
-  width: 115px;
-  height: 33px;
-  background-image: url("../img/htmlacdm_logo.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 135px;
+  height: 53px;
   right: 0;
   bottom: 64px;
+}
+
+.footer-htmlacademy-logo {
+  fill: #FFC700;
+  display: block;
+  margin: 10px;
+}
+
+.footer-htmlacademy-link:hover .footer-htmlacademy-logo {
+  fill: #FFFFFF;
+}
+
+.footer-htmlacademy-link:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 10px;
+}
+
+.footer-htmlacademy-link:active .footer-htmlacademy-logo {
+  opacity: .3;
 }
 
 .page-footer {
