@@ -722,7 +722,7 @@ header::before {
 
 .promoted-product-image-container {
   display: flex;
-  position: relative;
+  /*position: relative;*/
 }
 
 .newsletter-title {
@@ -987,26 +987,41 @@ header::before {
 .slider-button {
   border: 0;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  width: 20px;
-  height: 60px;
-  top: 0;
-  bottom: 0;
+  position: relative;
+  width: 40px;
+  height: 80px;
   margin-top: auto;
   margin-bottom: auto;
+  cursor: pointer;
 }
 
-.slider-prev {
+.slider-button-icon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.slider-button:hover .slider-button-icon {
+  opacity: .6;
+}
+
+.slider-button:active .slider-button-icon {
+  opacity: .3;
+}
+
+.slider-button:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 6px;
+}
+
+.slider-button.slider-button-prev {
   left: 19px;
-  background-image: url("../img/left-tall-arrow.svg");
 }
 
-.slider-next {
+.slider-button.slider-button-next {
   right: 19px;
-  background-image: url("../img/right-tall-arrow.svg");
 }
 
 .promoted-product-card {
