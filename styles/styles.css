@@ -736,6 +736,7 @@ header::before {
 }
 
 .footer-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -744,6 +745,28 @@ header::before {
   padding-bottom: 61px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer-container::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 7px;
+  left: 0;
+  bottom: 77px;
+  background-color: #FFC700;
+}
+
+.footer-container::after {
+  position: absolute;
+  content: "";
+  width: 115px;
+  height: 33px;
+  background-image: url("../img/htmlacdm_logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 64px;
 }
 
 .page-footer {
