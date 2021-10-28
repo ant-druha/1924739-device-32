@@ -390,10 +390,12 @@ header::before {
 
 .button-services {
   width: 160px;
+  padding-top: 9px;
+  padding-bottom: 11px;
 }
 
 .services-slider-pagination-item {
-  margin-bottom: 45px;
+  margin-bottom: 24px;
 }
 
 .services-slider-pagination-item:last-of-type {
@@ -427,11 +429,25 @@ header::before {
 }
 
 .services {
+  position: relative;
   min-width: 1160px;
-  background-color: #F0F0F0;
   margin-bottom: 90px;
   padding-top: 70px;
   padding-bottom: 140px;
+  background-image: -webkit-linear-gradient(top, white 100px, #F0F0F0 0);
+  background-image: -moz-linear-gradient(top, white 100px, #F0F0F0 0);
+  background-image: -o-linear-gradient(top, white 100px, #F0F0F0 0);
+  background-image: linear-gradient(to bottom, white 100px, #F0F0F0 0);
+}
+
+.services::after {
+  position: absolute;
+  content: "";
+  width: 136px;
+  height: 164px;
+  background-image: url("../img/delivery_man.svg");
+  right: 206px;
+  top: 85px;
 }
 
 .services-slider-pagination {
@@ -443,13 +459,17 @@ header::before {
   margin: 0;
   margin-right: 120px;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .services-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.services-list-item {
+  width: 450px;
 }
 
 .services-title {
