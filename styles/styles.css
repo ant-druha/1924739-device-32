@@ -386,18 +386,34 @@ header::before {
   z-index: 100;
 }
 
-.button-borderless {
-  border: none;
-}
-
 .button-services {
-  padding-left: 0;
+  padding: 0;
+  border: none;
   width: 160px;
   padding-top: 9px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
+}
+
+.services-slider-pagination-item.item-current::before {
+  content: "";
+  position: absolute;
+  display: block;
+  /*todo seems like a workaround b/c of the background overlay =/ */
+  width: 120px;
+  height: 40px;
+  background-color: #000000;
+  top: 0;
+  left: 160px;
+}
+
+.services-slider-pagination-item.item-current .navigation-link {
+  background-color: #000000;
+  color: #FFE17F;
+  background-image: none;
 }
 
 .services-slider-pagination-item {
+  position: relative;
   margin-bottom: 24px;
 }
 
@@ -416,11 +432,28 @@ header::before {
   text-decoration: none;
   text-transform: uppercase;
   opacity: 1;
+  cursor: pointer;
 
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navigation-link:focus {
+  outline: none;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navigation-link:hover {
+  background-color: #FFE17F;
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, .3);
 }
 
 .product-feature-name {
@@ -437,7 +470,6 @@ header::before {
 }
 
 .services {
-  position: relative;
   min-width: 1160px;
   margin-bottom: 90px;
   padding-top: 70px;
@@ -448,24 +480,29 @@ header::before {
   background-image: linear-gradient(to bottom, white 100px, #F0F0F0 0);
 }
 
-.services::before {
+.services-container {
+  display: flex;
+  position: relative;
+}
+
+.services-container::before {
   position: absolute;
   content: "";
   width: 7px;
   height: 319px;
-  left: 417px;
-  top: 0;
+  left: 280px;
+  top: -70px;
   background-color: #000000;
 }
 
-.services::after {
+.services-container::after {
   position: absolute;
   content: "";
   width: 136px;
   height: 164px;
   background-image: url("../img/delivery_man.svg");
-  right: 206px;
-  top: 85px;
+  right: 64px;
+  top: 14px;
 }
 
 .services-slider-pagination {
@@ -716,13 +753,8 @@ header::before {
   margin-bottom: 0;
 }
 
-.flex-container {
-  display: flex;
-}
-
 .promoted-product-image-container {
   display: flex;
-  /*position: relative;*/
 }
 
 .newsletter-title {
