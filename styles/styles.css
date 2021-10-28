@@ -225,7 +225,7 @@ header::before {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 1081px;
+  width: 1082px;
   list-style-type: none;
 }
 
@@ -234,7 +234,7 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1061px;
+  width: 1062px;
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
