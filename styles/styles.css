@@ -440,6 +440,16 @@ header::before {
   background-image: linear-gradient(to bottom, white 100px, #F0F0F0 0);
 }
 
+.services::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 319px;
+  left: 417px;
+  top: 0;
+  background-color: #000000;
+}
+
 .services::after {
   position: absolute;
   content: "";
@@ -617,9 +627,20 @@ header::before {
 }
 
 .about-info-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 560px;
+}
+
+.about-info-item::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  background-color: #000000;
+  top: -42px;
+  left: 0;
 }
 
 .contacts-sub-title {
