@@ -1020,7 +1020,7 @@ header::before {
   grid-column: 3/4;
   grid-row: 1/2;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   background-color: #EBEBEB;
 }
 
@@ -1032,8 +1032,20 @@ header::before {
 }
 
 .button-sort {
-  width: 11px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-up {
+  content: "";
+  background-image: url("../img/sort-up_20.svg");
+}
+
+.button-down {
+  content: "";
+  background-image: url("../img/sort-down.svg");
 }
 
 .select-control {
