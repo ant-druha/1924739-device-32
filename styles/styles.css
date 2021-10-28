@@ -853,6 +853,22 @@ header::before {
   column-gap: 35px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item + .breadcrumbs-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 4px;
+  height: 7px;
+  background-image: url("../img/right-arrow-small.svg");
+  left: -17px;
+  top: 50%;
+  margin-top: -4px;
+}
+
 .breadcrumbs-item-link {
   font-size: 16px;
   line-height: 19px;
