@@ -917,6 +917,10 @@ header::before {
   outline: 5px solid #AF4FFF;
 }
 
+.social-item-link:active .social-item-icon {
+  opacity: .3;
+}
+
 .social-item-icon {
   position: absolute;
   top: 0;
