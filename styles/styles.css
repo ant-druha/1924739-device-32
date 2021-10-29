@@ -1201,14 +1201,23 @@ header::before {
   height: 30px;
 }
 
+.sort-up {
+  background-image: url("../img/sort-down.svg");
+  transform: rotate(180deg);
+}
+
+.sort-down {
+  background-image: url("../img/sort-down.svg");
+}
+
 .sort-icon {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  margin: auto;
-  fill: #000;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: .2;
 }
 
