@@ -1039,11 +1039,11 @@ header::before {
 }
 
 .slider-button {
+  position: relative;
   border: 0;
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 0);
-  position: relative;
   width: 40px;
   height: 80px;
   margin-top: auto;
@@ -1053,8 +1053,12 @@ header::before {
 
 .slider-button-icon {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider-button:hover .slider-button-icon {
@@ -1070,12 +1074,13 @@ header::before {
   border-radius: 6px;
 }
 
-.slider-button.slider-button-prev {
-  left: 19px;
+.slider-icon-prev {
+  background-image: url("../img/left-tall-arrow.svg");
 }
 
-.slider-button.slider-button-next {
-  right: 19px;
+.slider-icon-next {
+  background-image: url("../img/left-tall-arrow.svg");
+  transform: rotate(180deg);
 }
 
 .promoted-product-card {
