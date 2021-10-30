@@ -261,8 +261,6 @@ header::before {
   display: flex;
   width: 516px;
   position: relative;
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 20px;
 }
 
 .site-search-form::before {
@@ -278,18 +276,6 @@ header::before {
   background-repeat: no-repeat;
 }
 
-.site-search-form:focus {
-  border-color: #AF4FFF;
-}
-
-.site-search-form:focus-within {
-  border-color: #AF4FFF;
-}
-
-.site-search-form:active {
-  border-color: black;
-}
-
 .button-search {
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -300,10 +286,10 @@ header::before {
   width: 160px;
   padding: 8px;
   margin: 0;
-  opacity: 0;
-  border: none;
+  border: 2px solid black;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0 20px 20px 0;
+  cursor: pointer;
 }
 
 .input-site-search {
@@ -312,37 +298,77 @@ header::before {
   min-width: 140px;
   padding: 0;
   padding-left: 52px;
-  opacity: .3;
-  color: black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: rgba(0, 0, 0, .3);
   border: none;
-}
-
-.input-site-search::placeholder {
-  opacity: 1;
-  color: black;
+  border-radius: 20px 0 0 20px;
 }
 
 .input-site-search:focus {
   outline: none;
-  opacity: .3;
-  border-right: 2px black;
+  color: rgba(0, 0, 0, .3);
+  border-color: black;
 }
 
 .input-site-search:hover {
-  opacity: .6;
+  color: rgba(0, 0, 0, .6);
 }
 
 .input-site-search:active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
-.site-search-form:active .input-site-search {
-  border-right: 2px black solid;
-  opacity: 1;
+.input-site-search::placeholder {
+  opacity: inherit;
+  color: inherit;
 }
 
-.site-search-form:active .button-search {
-  opacity: 1;
+.input-site-search:not(:placeholder-shown) {
+  color: rgba(0, 0, 0, 1);
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-right: none;
+}
+
+.input-site-search:placeholder-shown:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 20px;
+}
+
+.input-site-search:placeholder-shown + .button-search {
+  display: none;
+}
+
+.button-search:focus {
+  outline: none;
+  border-color: #AF4FFF;
+}
+
+.button-search:hover {
+  background-color: black;
+  color: white;
+}
+
+.button-search:active {
+  background-color: black;
+  color: rgba(255, 255, 255, .3);
+  border: none;
+}
+
+/* IE 11*/
+
+.input-site-search:-ms-input-placeholder + .button-search {
+  display: none;
+}
+
+.input-site-search:not(:-ms-input-placeholder) {
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-right: none;
+}
+
+.input-site-search:-ms-input-placeholder:focus {
+  border: 2px solid #AF4FFF;
+  border-radius: 20px;
 }
 
 /* clears the ‘X’ from Internet Explorer */
