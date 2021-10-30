@@ -410,14 +410,24 @@ header::before {
   text-transform: uppercase;
   opacity: 1;
   cursor: pointer;
+}
 
+.navigation-link:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+.navigation-link-light-yellow {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
 }
 
-.navigation-link:focus {
+.navigation-link-light-yellow:hover {
+  background-color: #FFE17F;
+}
+
+.navigation-link-light-yellow:focus {
   outline: none;
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
@@ -425,12 +435,23 @@ header::before {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
 }
 
-.navigation-link:hover {
-  background-color: #FFE17F;
+.navigation-link-dark-yellow {
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFC700 42%, #FFC700 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFC700 42%, #FFC700 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFC700 42%, #FFC700 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #FFC700 42%, #FFC700 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
 }
 
-.navigation-link:active {
-  color: rgba(0, 0, 0, .3);
+.navigation-link-dark-yellow:hover {
+  background-color: #FFC700;
+}
+
+.navigation-link-dark-yellow:focus {
+  outline: none;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
 }
 
 .product-feature-name {
