@@ -244,19 +244,6 @@ header::before {
   margin-left: auto;
 }
 
-.main-menu-item:nth-child(n+2) {
-  margin-left: 20px;
-}
-
-.main-menu-item:first-child {
-  width: 520px;
-}
-
-.main-menu-item:last-child {
-  margin-left: auto;
-  margin-right: 0;
-}
-
 .site-search-form {
   display: flex;
   width: 516px;
@@ -454,6 +441,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-menu-link {
+  position: relative;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -461,17 +449,38 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-right: 20px;
   padding-left: 20px;
   color: black;
   background-color: #FFE17F;
-  text-decoration: none;
+  text-decoration: none;;
+  border-radius: 25px;
 }
 
-.main-menu-item:first-child .main-menu-link {
-  position: relative;
+.main-menu-link:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #AF4FFF;
+  border-color: #AF4FFF;
+}
+
+.main-menu-link:active {
+  opacity: .3;
+  box-shadow: none;
+}
+
+.main-menu-link:active::after {
+  opacity: .3;
+}
+
+.main-menu-item:first-child {
+  width: 520px;
+}
+
+.main-menu-item:last-child {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .main-menu-item:first-child .main-menu-link::after {
@@ -487,6 +496,24 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 50px;
   background-image: url("../img/catalog_expand_20.svg");
   background-position: center;
+}
+
+.main-menu-item:first-child .main-menu-link:hover::after {
+  background-image: url("../img/catalog_expand.svg");
+}
+
+.main-menu-item:nth-child(n+2):not(:last-child) {
+  margin-left: 20px;
+}
+
+.main-menu-item:nth-child(n+2) .main-menu-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 2px;
+  bottom: 7px;
+  left: 20px;
+  background-color: black;
 }
 
 .promoted-products {
