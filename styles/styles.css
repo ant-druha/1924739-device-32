@@ -233,6 +233,7 @@ header::before {
   justify-content: space-between;
   width: 257px;
   margin-left: 22px;
+  margin-right: 10px;
 }
 
 .user-menu-item:last-child {
@@ -472,6 +473,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main-menu-item:first-child {
   width: 520px;
+  margin-right: 20px;
 }
 
 .main-menu-item:last-child {
@@ -496,10 +498,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .main-menu-item:first-child .main-menu-link:hover::after {
   background-image: url("../img/catalog_expand.svg");
-}
-
-.main-menu-item:nth-child(n+2):not(:last-child) {
-  margin-left: 20px;
 }
 
 .main-menu-item:nth-child(n+2) .main-menu-link:hover::after {
