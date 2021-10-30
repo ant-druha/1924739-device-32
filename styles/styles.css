@@ -193,11 +193,11 @@ header::before {
   background-repeat: no-repeat;
 }
 
-.user-menu-link-cart {
+.menu-link-cart {
   position: relative;
 }
 
-.user-menu-link-cart::before {
+.menu-link-cart::before {
   position: absolute;
   content: "2";
   display: flex;
@@ -300,10 +300,9 @@ header::before {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
-  /*padding-left: 44px; need to take into account inner svg is absolute position is not used */
   padding-left: 18px;
   padding-right: 21px;
-  box-sizing: border-box;
+  border-radius: 20px;
   color: black;
   background-color: #FFE17F;
   text-decoration: none;
@@ -312,9 +311,38 @@ header::before {
 .navigation-icon {
   display: inline-block;
   margin-right: 10px;
-  /*position: absolute;*/
-  /*left: 15px;*/
-  /*top: 13px;*/
+  background-repeat: no-repeat;
+}
+
+.user-menu-link:hover {
+  opacity: .6;
+}
+
+.user-menu-link:focus {
+  outline: 2px solid #AF4FFF;
+}
+
+.user-menu-link:active {
+  opacity: .3;
+  outline: none;
+}
+
+.menu-link-login .navigation-icon {
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/user.svg");
+}
+
+.menu-link-compare .navigation-icon {
+  width: 10px;
+  height: 12px;
+  background-image: url("../img/compare.svg");
+}
+
+.menu-link-cart .navigation-icon {
+  width: 16px;
+  height: 14px;
+  background-image: url("../img/cart.svg");
 }
 
 .logout-link {
