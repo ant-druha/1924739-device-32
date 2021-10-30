@@ -363,29 +363,6 @@ header::before {
   grid-template-rows: min-content min-content min-content min-content;
 }
 
-.button-cart {
-  position: relative;
-  font-family: inherit;
-  font-size: inherit;
-  color: black;
-  background-color: #FFE17F;
-  border: none;
-}
-
-.button-cart .navigation-icon::before
-  /*todo: before is not displaying */
-{
-  content: "t";
-  position: absolute;
-  left: -10px;
-  top: -10px;
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background-color: #FFFFFF;
-  z-index: 100;
-}
-
 .button-services {
   padding: 0;
   border: none;
