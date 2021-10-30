@@ -219,15 +219,11 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 1062px;
+  width: 1078px;
   padding: 0;
   margin: 0;
   margin-bottom: 14px;
   list-style-type: none;
-}
-
-.user-menu-item:first-child {
-  margin-right: 10px;
 }
 
 /* Login/Logout submenu */
@@ -236,7 +232,7 @@ header::before {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 257px;
-  margin-right: 14px;
+  margin-left: 22px;
 }
 
 .user-menu-item:last-child {
