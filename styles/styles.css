@@ -926,6 +926,24 @@ input[type="search"]::-webkit-search-results-decoration {
 .contacts-phone {
   text-decoration: none;
   color: inherit;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contacts-phone:hover {
+  color: #FFC700;
+}
+
+.contacts-phone:focus {
+  outline: none;
+  border: 2px solid #AF4FFF;
+  border-radius: 25px;
+}
+
+.contacts-phone:active {
+  opacity: .3;
 }
 
 .about-info-schedule-table {
