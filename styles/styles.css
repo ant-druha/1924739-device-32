@@ -1533,6 +1533,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog-sorting-type {
   display: flex;
+  align-items: center;
   margin-left: 72px;
   margin-right: auto;
   background-color: #EBEBEB;
@@ -1586,8 +1587,30 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  height: 30px;
+  padding-top: 4px;
+  padding-bottom: 7px;
+  padding-left: 13px;
+  padding-right: 41px;
+  appearance: none;
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
   background-color: #EBEBEB;
   border: none;
+}
+
+.select-control:hover {
+  opacity: .6;
+}
+
+.select-control:focus {
+  outline: 5px solid #AF4FFF;
+}
+
+.select-control:active {
+  opacity: .3;
+  outline: none;
 }
 
 .catalog-filter-group-title {
