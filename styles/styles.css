@@ -750,30 +750,75 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #F0F0F0;
 }
 
-.shipping-info::before {
-  content: "";
-  position: absolute;
+.shipping-info-left-column {
+  position: relative;
+  display: inline-block;
   width: 125px;
   height: 100px;
   background-color: #FFE17F;
-  background-image: url("../img/delivery_car.svg");
   background-repeat: no-repeat;
   background-size: 47px 31px;
   background-position: center;
 }
 
-.shipping-info-button {
+.shipping-info-icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  fill: #000;
+}
+
+.shipping-info-info .shipping-info-icon {
+  opacity: .3;
+}
+
+.shipping-info-link {
+  text-decoration: none;
+}
+
+.shipping-info-link:hover .shipping-info {
+  background: #EBEBEB;
+}
+
+.shipping-info-link:hover .shipping-info-left-column {
+  background-color: #FFC700;
+}
+
+.shipping-info-link:hover .shipping-info-icon {
+  opacity: 1;
+}
+
+.shipping-info-link:hover .shipping-info-info {
+  background-color: #DCDCDC;
+}
+
+.shipping-info-link:focus .shipping-info {
+  outline: 5px solid #AF4FFF;
+}
+
+.shipping-info-link:active .shipping-info-text {
+  color: rgba(0, 0, 0, .3);
+}
+
+.shipping-info-link:active .shipping-info-icon {
+  opacity: .3;
+}
+
+.shipping-info-link:active .shipping-info-info {
+  background-color: #DCDCDC;
+}
+
+.shipping-info-info {
   position: absolute;
   width: 40px;
   height: 40px;
   right: 33px;
   top: 30px;
   border-radius: 50%;
-  border: none;
   background: rgba(220, 220, 220, 0.5);
-  background-image: url("../img/info_30.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .shipping-info-text {
@@ -785,7 +830,6 @@ input[type="search"]::-webkit-search-results-decoration {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: black;
-  background-color: #F0F0F0;
   margin: 0 auto;
   padding: 0;
 }
