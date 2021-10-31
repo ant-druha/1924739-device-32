@@ -969,8 +969,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .contacts-phone:focus {
-  outline: none;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
   border-radius: 25px;
 }
 
@@ -1242,8 +1241,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .footer-htmlacademy-link:focus {
-  outline: none;
-  border: 2px solid #AF4FFF;
+  outline: 2px solid #AF4FFF;
   border-radius: 10px;
 }
 
