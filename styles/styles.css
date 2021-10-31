@@ -572,10 +572,6 @@ input[type="search"]::-webkit-search-results-decoration {
   cursor: pointer;
 }
 
-.navigation-link:active {
-  color: rgba(0, 0, 0, .3);
-}
-
 .navigation-link-light-yellow {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #FFE17F 42%, #FFE17F 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
@@ -612,6 +608,11 @@ input[type="search"]::-webkit-search-results-decoration {
   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 42%, #AF4FFF 42%, #AF4FFF 58%, rgba(255, 255, 255, 0) 58%, rgba(255, 255, 255, 0) 100%);
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, .3);
+  background-image: none;
 }
 
 .product-feature-name {
@@ -1448,7 +1449,25 @@ input[type="search"]::-webkit-search-results-decoration {
   list-style-type: none;
 }
 
-.product-card {
+.more-info-link {
+  position: absolute;
+  display: none;
+  width: 180px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+}
+
+.more-info-link:focus {
+  background-image: none;
+}
+
+.product-card-item {
   width: 360px;
   display: grid;
   grid-template-columns: min-content auto;
@@ -1457,6 +1476,33 @@ input[type="search"]::-webkit-search-results-decoration {
    higher than image height. Why?*/
   grid-template-rows: 380px min-content;
   row-gap: 32px;
+}
+
+.product-card-item:hover .product-card-image {
+  /* todo: what is the
+      background: linear-gradient(0deg, rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(.jpg);
+      in figma and how to set it? */
+  opacity: .3;
+}
+
+.product-card-item:hover .more-info-link {
+  display: block;
+}
+
+.product-card-title-link:focus + .product-card-image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0 0 0 5px #AF4FFF;
+}
+
+.product-card-title-link:focus ~ .product-card-price,
+.product-card-title-link:focus {
+  outline: none;
+  color: #AF4FFF;
 }
 
 .catalog-container {
@@ -1653,7 +1699,7 @@ input[type="search"]::-webkit-search-results-decoration {
   line-height: 19px;
 }
 
-.product-card-image-link {
+.product-card-image-wrapper {
   position: relative;
   margin: 0;
   padding: 0;
@@ -1661,7 +1707,7 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-column: 1/-1;
 }
 
-.product-card.product-badge-new .product-card-image-link::after {
+.product-card-item.product-new .product-card-image-wrapper::after {
   content: "";
   position: absolute;
   width: 60px;
@@ -1676,6 +1722,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product-card-title-link {
+  grid-row: 2/3;
   text-decoration: none;
   color: black;
 }
@@ -1687,9 +1734,9 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
-  color: black;
   display: inline-block;
   width: 280px;
+  margin: 0;
   background-color: inherit;
 }
 
