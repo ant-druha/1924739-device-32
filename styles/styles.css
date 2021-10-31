@@ -386,11 +386,12 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .user-menu-link {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 18px;
-  padding-right: 21px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 19px;
   border-radius: 20px;
+  border: 2px solid transparent;
   color: black;
   background-color: #FFE17F;
   text-decoration: none;
@@ -407,7 +408,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user-menu-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: none;
+  border: 2px solid #AF4FFF;
 }
 
 .user-menu-link:active {
