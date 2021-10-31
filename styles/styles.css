@@ -1065,6 +1065,12 @@ input[type="search"]::-webkit-search-results-decoration {
   border-color: #000;
 }
 
+/* IE 11*/
+.input-email:not(:-ms-input-placeholder) {
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-right: none;
+}
+
 /* .invalid class in case of validation errors */
 .input-email.invalid {
   border-color: #FF3D3D;
