@@ -712,6 +712,35 @@ input[type="search"]::-webkit-search-results-decoration {
   text-decoration: none;
 }
 
+.categories-list-item-link:hover .category-background {
+  background-color: #FFC700;
+}
+
+.categories-list-item-link:focus {
+  outline: none;
+}
+
+.categories-list-item-link:focus .category-background {
+  border: 5px solid #AF4FFF;
+}
+
+.categories-list-item-link:focus .categories-figcaption {
+  color: #AF4FFF;
+}
+
+.categories-list-item-link:active .category-icon {
+  opacity: .3;
+}
+
+.categories-list-item-link:active .categories-figcaption {
+  opacity: .3;
+  color: #000;
+}
+
+.categories-list-item-link:active .category-background {
+  border: none;
+}
+
 .categories-list {
   display: flex;
   flex-wrap: wrap;
