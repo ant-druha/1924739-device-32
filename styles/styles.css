@@ -1046,6 +1046,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .slider-button:focus {
+  outline: none;
   border: 2px solid #AF4FFF;
   border-radius: 6px;
 }
