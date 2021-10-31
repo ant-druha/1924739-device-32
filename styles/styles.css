@@ -1035,8 +1035,37 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .input-email {
-  width: 560px;
-  margin-right: 40px;
+  padding-left: 3px;
+  width: 601px;
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, .1);
+  background-clip: padding-box;
+}
+
+.input-email:hover {
+  border-color: rgba(0, 0, 0, .2);
+}
+
+.input-email:focus {
+  outline: none;
+  background-color: #DCDCDC;
+}
+
+.input-email::placeholder {
+  color: rgba(0, 0, 0, .5);
+}
+
+.input-email:hover::placeholder {
+  color: rgba(0, 0, 0, .7);
+}
+
+.input-email:not(:placeholder-shown) {
+  border-color: #000;
+}
+
+/* .invalid class in case of validation errors */
+.input-email.invalid {
+  border-color: #FF3D3D;
 }
 
 .button-bordered {
@@ -1048,6 +1077,22 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 260px;
   height: 55px;
   margin-right: 171px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-newsletter:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+.button-newsletter:focus {
+  outline: none;
+  border-color: #AF4FFF;
+}
+
+.button-newsletter:active {
+  background-color: #000;
+  color: rgba(155, 155, 155, .3);
 }
 
 .button-pagination-show-more {
