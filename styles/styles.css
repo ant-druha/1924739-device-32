@@ -1730,9 +1730,37 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-bottom: 9px;
 }
 
-.pagination-link-next,
+.pagination-link-prev,
+.pagination-link-next {
+  border: 5px solid rgba(0, 0, 0, 0);
+  padding: 21px;
+}
+
 .pagination-link-prev {
-  padding: 26px;
+  padding-left: 24px;
+  padding-right: 13px;
+}
+
+.pagination-link-next {
+  padding-right: 24px;
+  padding-left: 13px;
+}
+
+.pagination-link-prev:hover,
+.pagination-link-next:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-link-prev:focus,
+.pagination-link-next:focus {
+  outline: none;
+  border: 5px solid #AF4FFF;
+}
+
+.pagination-link-prev:active,
+.pagination-link-next:active {
+  border: 5px solid rgba(0, 0, 0, 0);
+  opacity: .3;
 }
 
 .pagination-item {
