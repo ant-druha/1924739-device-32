@@ -659,16 +659,6 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #000000;
 }
 
-.services-container::after {
-  position: absolute;
-  content: "";
-  width: 136px;
-  height: 164px;
-  background-image: url("../img/delivery_man.svg");
-  right: 64px;
-  top: 14px;
-}
-
 .services-slider-pagination {
   display: flex;
   flex-direction: column;
@@ -688,7 +678,18 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services-list-item {
-  width: 450px;
+  display: none;
+  width: 500px;
+}
+
+.services-list-item.item-current {
+  display: block;
+}
+
+.services-image {
+  position: absolute;
+  right: 64px;
+  top: 14px;
 }
 
 .services-title {
