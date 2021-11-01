@@ -104,6 +104,7 @@ figure {
   margin: 0;
   margin-bottom: 19px;
   padding-top: 123px;
+  z-index: 1;
 }
 
 .promoted-product-card-description {
@@ -521,11 +522,28 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .product-card-annotation {
   display: none;
+  position: relative;
   /*align-items: center;*/
   grid-template-columns: min-content auto;
   column-gap: 200px;
   grid-template-rows: min-content min-content min-content min-content;
   margin-left: 40px;
+}
+
+.slider-number-background {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 250px;
+  height: 135px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 180px;
+  line-height: 135px;
+  text-align: right;
+  color: #FFFFFF;
 }
 
 .promoted-product-card.item-current .product-card-annotation {
