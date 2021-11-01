@@ -521,6 +521,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .product-card-annotation {
   display: grid;
+  /*align-items: center;*/
+  grid-template-columns: min-content auto;
   column-gap: 200px;
   grid-template-rows: min-content min-content min-content min-content;
   margin-left: 40px;
@@ -1443,13 +1445,48 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-bottom: 44px;
 }
 
-.product-card-pagination {
+.product-card-slider-pagination {
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   grid-column: 2/3;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+
+.product-card-slider-pagination-item:not(:last-of-type) {
+  margin-right: 22px;
+}
+
+.product-card-slider-pagination-button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.product-card-slider-pagination-button.item-current {
+  background-color: #000000;
+}
+
+.product-card-slider-pagination-button:hover {
+  opacity: .6;
+}
+
+.product-card-slider-pagination-button:focus {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.product-card-slider-pagination-button:active {
+  opacity: .3;
+}
+
 
 .more-info-link {
   position: absolute;
