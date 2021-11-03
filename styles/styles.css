@@ -559,7 +559,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-bottom: 10px;
 }
 
-.services-slider-pagination-item.item-current  .button-services {
+.services-slider-pagination-item.item-current .button-services {
   box-shadow: 120px 0 0 0 #000;
 }
 
@@ -699,6 +699,33 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .services-list-item.item-current {
   display: block;
+}
+
+.services-list-item-image-delivery::after {
+  content: url("../img/service_delivery_man.svg");
+  position: absolute;
+  width: 136px;
+  height: 164px;
+  right: 64px;
+  top: 14px;
+}
+
+.services-list-item-image-credit::after {
+  content: url("../img/service_credit.svg");
+  position: absolute;
+  width: 156px;
+  height: 188px;
+  right: 64px;
+  top: 14px;
+}
+
+.services-list-item-image-warranty::after {
+  content: url("../img/service_warranty.svg");
+  position: absolute;
+  width: 171px;
+  height: 195px;
+  right: 64px;
+  top: 14px;
 }
 
 .services-image {
