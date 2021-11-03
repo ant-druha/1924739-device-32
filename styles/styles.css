@@ -551,23 +551,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .button-services {
-  padding: 0;
   border: none;
   width: 160px;
+  height: 40px;
+  padding: 0;
   padding-top: 9px;
   padding-bottom: 10px;
 }
 
-.services-slider-pagination-item.item-current::before {
-  content: "";
-  position: absolute;
-  display: block;
-  /*todo seems like a workaround b/c of the background overlay =/ */
-  width: 120px;
-  height: 40px;
-  background-color: #000000;
-  top: 0;
-  left: 160px;
+.services-slider-pagination-item.item-current  .button-services {
+  box-shadow: 120px 0 0 0 #000;
 }
 
 .services-slider-pagination-item.item-current .navigation-link {
