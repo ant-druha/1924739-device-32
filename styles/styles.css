@@ -203,6 +203,245 @@ header::before {
   color: #000000;
 }
 
+.popover {
+  display: none;
+  position: absolute;
+  width: 320px;
+  min-height: 100px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+  background-color: #000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  width: 14px;
+  height: 6px;
+  background-image: url("../img/cart-pin.svg");
+  background-repeat: no-repeat;
+}
+
+.popover-cart {
+  left: -133px;
+  z-index: 3;
+}
+
+.popover-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 135px;
+}
+
+.cart-product-list {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-top: 20px;
+  list-style-type: none;
+}
+
+.cart-product-list-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-product-list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.cart-product-list-item:hover {
+  opacity: .6;
+}
+
+.cart-product-list-item:active {
+  opacity: .3;
+}
+
+.cart-product-image {
+  display: block;
+  order: -1;
+  margin-right: 23px;
+}
+
+.cart-product-item-link {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 180px;
+  text-align: left;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.cart-product-item-link:focus {
+  outline: none;
+  color: #AF4FFF;
+}
+
+.cart-product-item-link:focus + .cart-product-image {
+  outline: 5px solid #AF4FFF;
+}
+
+.cart-product-item-link:focus ~ .cart-product-delete-button {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.cart-product-item-link:not(:focus-visible) {
+  outline: none;
+  color: #FFFFFF;
+}
+
+.cart-product-item-link:not(:focus-visible) + .cart-product-image {
+  outline: none;
+}
+
+.cart-product-item-link:not(:focus-visible) ~ .cart-product-delete-button {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.cart-product-item-link:focus-visible {
+  outline: none;
+  color: #AF4FFF;
+}
+
+.cart-product-item-link:focus-visible + .cart-product-image {
+  outline: 5px solid #AF4FFF;
+}
+
+.cart-product-item-link:focus-visible ~ .cart-product-delete-button {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.cart-product-delete-button {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.cart-product-delete-button::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #FFFFFF;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cart-product-delete-button::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #FFFFFF;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cart-product-delete-button:active {
+  opacity: .3;
+}
+
+.cart-summary-table {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  margin-top: auto;
+  min-height: 44px;
+  align-items: center;
+  background-color: #1A1A1A;
+}
+
+.cart-property {
+  margin-right: 5px;
+  max-width: 80px;
+  text-align: left;
+}
+
+.cart-property-value + .cart-property {
+  margin-left: auto;
+}
+
+.cart-property-value {
+  margin: 0;
+  max-width: 55px;
+}
+
+.main-menu-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.popover-cart-button {
+  width: 280px;
+  min-height: 50px;
+  align-self: center;
+  color: #000;
+  background-color: #FFF;
+  margin-bottom: 21px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.popover-cart-button:hover {
+  background-color: #FFE17F;
+}
+
+.popover-cart-button:focus {
+  outline: 5px solid #AF4FFF;
+}
+
+.popover-cart-button:not(:focus-visible) {
+  outline: none;
+}
+
+.popover-cart-button:focus-visible {
+  outline: 5px solid #AF4FFF;
+}
+
+.popover-cart-button:active {
+  color: rgba(0, 0, 0, .3);
+}
+
+
 .main-menu-list {
   position: relative;
   left: -20px;
@@ -239,6 +478,7 @@ header::before {
 }
 
 .user-menu-item:last-child {
+  position: relative;
   text-align: right;
   margin-left: auto;
 }
