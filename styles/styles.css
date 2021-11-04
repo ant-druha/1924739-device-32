@@ -451,7 +451,7 @@ input[type="search"]::-webkit-search-results-decoration {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
   color: inherit;
@@ -475,7 +475,77 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: .3;
 }
 
+.main-submenu {
+  position: absolute;
+  display: none;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  min-height: 180px;
+  top: 100%;
+  /*todo: how to properly align it relative to container? */
+  left: -39.5px;
+  padding: 0;
+  padding-left: 43px;
+  padding-top: 33px;
+  padding-bottom: 50px;
+  margin: 0;
+  background-color: #FFE17F;
+  list-style-type: none;
+}
+
+.main-submenu-item {
+  margin-right: 10px;
+}
+
+.main-submenu:hover,
+.main-menu-item:first-child:focus-within .main-submenu,
+.main-menu-item:first-child .main-menu-link:hover + .main-submenu {
+  display: flex;
+}
+
+.main-submenu-item-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-submenu-link {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  border: 2px solid transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.main-submenu-link:hover {
+  opacity: .6;
+}
+
+.main-submenu-link:focus {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.main-submenu-link:not(:focus-visible) {
+  border: 2px solid transparent;
+}
+
+.main-submenu-link:focus-visible {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.main-submenu-link:active {
+  opacity: .3;
+}
+
 .main-menu-item:first-child {
+  position: relative;
+  z-index: 2;
   width: 520px;
   margin-right: 20px;
 }
