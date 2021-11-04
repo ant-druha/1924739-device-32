@@ -1638,6 +1638,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background: #EBEBEB;
   color: black;
   padding-left: 60px;
+  padding-right: 69px;
   grid-column: 2/3;
   grid-row: 2/3;
   display: flex;
@@ -1759,32 +1760,260 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: none;
 }
 
+.catalog-filter-group {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group::before {
+  content: "";
+  position: absolute;
+  /*todo why is it relative to margin bottom of the title????*/
+  top: -71px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+
+.catalog-filter-group.price-group {
+  margin-top: 83px;
+  margin-bottom: 48px;
+}
+
+.catalog-filter-group.color-group {
+  margin-bottom: 57px;
+}
+
+.catalog-filter-group.bt-group {
+  margin-bottom: 50px;
+}
+
 .catalog-filter-group-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  margin-bottom: 29px;
+}
+
+.price-group .catalog-filter-group-title {
+  margin-bottom: 40px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: rgba(0, 0, 0, .1);
+  margin-bottom: 35px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #EBEBEB;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.toggle-max {
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 37px;
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  opacity: .2;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/check-mark.svg");
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  opacity: 1;
+}
+
+/*.control:hover .control-input[type="checkbox"]:checked + .control-mark {*/
+.control:hover .control-input:checked + .control-mark {
+  opacity: .5;
+}
+
+/*.control:hover .control-input[type="checkbox"]:checked ~ .control-label {*/
+.control:hover .control-input:checked ~ .control-label {
+  opacity: .5;
+}
+
+.control-input:focus-visible + .control-mark,
+.control-input:focus-visible ~ .control-label {
+  outline: none;
+  opacity: 1;
+  color: #AF4FFF;
+  border-color: #AF4FFF;
+}
+
+.control:active {
+  opacity: .2;
 }
 
 .catalog-filter-label {
+  position: absolute;
+  display: flex;
+  max-width: 60px;
+  top: 15px;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
   opacity: 0.3;
 }
 
+.toggle-min + .catalog-filter-label {
+  left: -15px
+}
+
+.toggle-max + .catalog-filter-label {
+  right: 0;
+  transform: translateX(50%);
+}
+
+.catalog-filter-input {
+  max-width: 40px;
+  padding: 0;
+  padding-left: 2px;
+  flex-shrink: 1;
+  font: inherit;
+  text-align: left;
+  border-color: transparent;
+  border: none;
+  background-color: inherit;
+}
+
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-toggle:active {
+  background-color: #000;
+}
+
+.range-toggle:active + .catalog-filter-label,
+.range-toggle:active + .catalog-filter-label .catalog-filter-input {
+  opacity: 1;
+}
+
+/* fallback for browsers not supporting :focus-visible */
+.range-toggle:focus,
+.range-toggle:focus + .catalog-filter-label,
+.range-toggle:focus + .catalog-filter-label .catalog-filter-input {
+  outline: none;
+  background-color: #EBEBEB;
+  border-color: #AF4FFF;
+  color: #AF4FFF;
+}
+
+/* disable mouse focus for browsers not supporting :focus-visible */
+.range-toggle:not(:focus-visible) {
+  outline: none;
+  color: #000;
+  border: 2px solid #000;
+  background-color: #EBEBEB;
+}
+
+.range-toggle:not(:focus-visible) + .catalog-filter-label,
+.range-toggle:not(:focus-visible) + .catalog-filter-label .catalog-filter-input {
+  outline: none;
+  border-color: transparent;
+  border: none;
+  background-color: transparent;
+  color: #000;
+}
+
+/* keyboard focus for browsers supporting :focus-visible */
+.range-toggle:focus-visible,
+.range-toggle:focus-visible + .catalog-filter-label,
+.range-toggle:focus-visible + .catalog-filter-label .catalog-filter-input {
+  outline: none;
+  background-color: #EBEBEB;
+  border-color: #AF4FFF;
+  color: #AF4FFF;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.control-input[type="radio"]:checked + .control-mark,
+.control-input[type="radio"]:checked ~ .control-label {
+  opacity: 1;
+}
+
 .catalog-filter-button {
   width: 200px;
-  margin-top: 50px;
   padding-top: 14px;
   padding-bottom: 16px;
   padding-left: 0;
   border: none;
-}
-
-.control-label {
-  font-size: 16px;
-  line-height: 19px;
 }
 
 .product-card-image-wrapper {
