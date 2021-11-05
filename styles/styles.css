@@ -204,8 +204,8 @@ header::before {
   transform: translate(-50%, -100%);
   width: 14px;
   height: 6px;
-  background-image: url("../img/cart-pin.svg");
-  background-repeat: no-repeat;
+  padding: 12px 12px 0;
+  background: url("../img/cart-pin.svg") no-repeat center bottom;
 }
 
 .popover-cart {
