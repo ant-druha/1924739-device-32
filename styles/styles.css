@@ -2489,3 +2489,361 @@ input[type="search"]::-webkit-search-results-decoration {
 .pagination-next {
   margin-left: auto;
 }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 78px;
+  background-color: #FFFFFF;
+}
+
+.modal-shipping-request {
+  width: 920px;
+  min-height: 580px;
+  border: 10px solid #000000;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 67px;
+  right: 58px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background: url("../img/big-cross-close.svg") center no-repeat;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  opacity: .6;
+}
+
+.modal-close-button:focus {
+  outline: 5px solid #AF4FFF;
+}
+
+.modal-close-button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.modal-close-button:focus-visible {
+  outline: 5px solid #AF4FFF;
+}
+
+.modal-close-button:active {
+  opacity: .3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 58px;
+  padding: 0;
+}
+
+.shipping-request-form {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 360px auto 160px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.shipping-request-form-username {
+  grid-column: 1/2;
+}
+
+.shipping-request-form-email {
+  grid-column: 2/4;
+}
+
+.shipping-request-form-order-subject {
+  grid-column: 1/3;
+}
+
+.shipping-request-form-quantity {
+  grid-column: 3/4;
+}
+
+.button-shipping-request {
+  grid-column: 1/-1;
+  width: 200px;
+  min-height: 40px;
+  margin-top: 14px;
+  border: none;
+}
+
+.field-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.form-label {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.shipping-request-form .input-text {
+  height: 60px;
+  padding: 0;
+  padding-left: 20px;
+  border: none;
+  background-color: #F0F0F0;
+}
+
+.shipping-request-form .input-text::placeholder {
+  opacity: .6;
+  color: #000000;
+}
+
+.shipping-request-form-username .input-text {
+  padding-right: 36px;
+}
+
+.shipping-request-form-email .input-text {
+  padding-right: 38px;
+}
+
+.form-input-comment-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-height: 30px;
+
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+
+  color: #000000;
+  text-align: left;
+}
+
+.shipping-request-form-email.error .form-input-comment-text,
+.shipping-request-form-username.error .form-input-comment-text {
+  display: block;
+  color: #FF3D3D;
+}
+
+.shipping-request-form-email .form-input-comment-text {
+  display: block;
+}
+
+.form-number-input .input-text {
+  padding: 0 45px;
+  text-align: center;
+}
+
+.shipping-request-form-username .input-text:placeholder-shown ~ .form-input-comment-text {
+  display: block;
+  color: #FF3D3D;
+}
+
+.shipping-request-form-username .input-text:-ms-input-placeholder ~ .form-input-comment-text {
+  display: block;
+  color: #FF3D3D;
+}
+
+
+.shipping-request-form-input-icon {
+  position: absolute;
+  fill: #B3B3B3;
+  top: 58px;
+}
+
+.shipping-request-form-username .shipping-request-form-input-icon {
+  right: 21px;
+}
+
+.shipping-request-form-email .shipping-request-form-input-icon {
+  right: 20px;
+}
+
+.form-info-button {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 14px;
+  top: -2px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFE17F;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-info-button-popover {
+  display: none;
+  z-index: 1;
+  width: 200px;
+  min-font-size: 160px;
+  padding: 19px;
+  bottom: -10px;
+  transform: translateY(100%);
+  left: -153px;
+
+  text-align: left;
+
+  cursor: auto;
+}
+
+.form-info-button-popover.popover::before {
+  left: unset;
+  right: 15px;
+  transform: translate(0, -100%);
+}
+
+.form-info-button:hover .form-info-button-popover {
+  display: block;
+}
+
+.form-info-button-popover:hover,
+.form-info-button-popover.popover::before:hover {
+  display: block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form-number-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-number-button {
+  position: absolute;
+  top: 48px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.input-number-button:hover .button-icon {
+  opacity: 1;
+}
+
+.input-number-button:hover ~ .input-text {
+  background-color: #EBEBEB;
+}
+
+.input-number-button:focus {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.input-number-button:focus:not(:focus-visible) {
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.input-number-button:focus-visible {
+  outline: none;
+  border: 2px solid #AF4FFF;
+}
+
+.input-number-button:active .button-icon {
+  opacity: .1;
+}
+
+.button-minus {
+  left: 19px;
+}
+
+.button-icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  fill: #000000;
+  opacity: .3;
+}
+
+.shipping-request-form-quantity .button-plus {
+  right: 19px;
+}
+
+.shipping-request-form input:hover {
+  background-color: #EBEBEB;
+}
+
+.shipping-request-form input:focus {
+  outline: 5px solid #AF4FFF;
+}
+
+.shipping-request-form input:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.shipping-request-form input:focus-visible {
+  outline: 5px solid #AF4FFF;
+}
+
+.shipping-request-form input:active {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #000000;
+  background-color: #FFFFFF;
+}
+
+.shipping-request-form input:not([type='number']):not(:placeholder-shown) {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #000000;
+  background-color: #FFFFFF;
+}
+
+.shipping-request-form input:not([type='number']):not(:-ms-input-placeholder) {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #000000;
+  background-color: #FFFFFF;
+}
+
+.shipping-request-form.error input[required] {
+  box-shadow: inset 0 0 0 3px #FF3D3D;
+  background-color: #FFFFFF;
+}
+
+.shipping-request-form.error input ~ .form-input-comment-text {
+  color: #FF3D3D;
+}
