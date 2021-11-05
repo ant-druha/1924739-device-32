@@ -179,7 +179,7 @@ header::before {
 .popover {
   display: none;
   position: absolute;
-  width: 320px;
+  min-width: 100px;
   min-height: 100px;
   font-family: "Rubik", sans-serif;
   font-style: normal;
@@ -209,6 +209,7 @@ header::before {
 }
 
 .popover-cart {
+  width: 320px;
   left: -133px;
   z-index: 3;
 }
