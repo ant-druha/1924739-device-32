@@ -1,6 +1,7 @@
 'use strict'
 
 module.exports = {
+  "extends": "stylelint-config-htmlacademy",
   rules: {
     'block-no-empty': true,
     'comment-no-empty': true,
@@ -42,7 +43,7 @@ module.exports = {
     'function-url-quotes': 'always',
     'function-whitespace-after': 'always',
 
-    'number-leading-zero': 'always',
+    'number-leading-zero': null,
     'number-no-trailing-zeros': true,
     'length-zero-no-unit': true,
 
