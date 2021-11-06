@@ -1897,7 +1897,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   display: none;
   width: 180px;
-  height: 40px;
+  min-height: 40px;
   top: 0;
   left: 0;
   right: 0;
@@ -2374,6 +2374,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .catalog-filter-button {
   width: 200px;
+  padding-right: 0;
   padding-top: 14px;
   padding-bottom: 16px;
   padding-left: 0;
