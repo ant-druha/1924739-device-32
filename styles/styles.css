@@ -441,6 +441,10 @@ header::before {
   list-style-type: none;
 }
 
+.user-menu-item {
+  min-height: 40px;
+}
+
 /* Login/Logout submenu */
 .user-menu-item:nth-child(2) {
   display: flex;
@@ -460,7 +464,6 @@ header::before {
 .site-search-form {
   display: flex;
   width: 516px;
-  height: 40px;
   position: relative;
 }
 
