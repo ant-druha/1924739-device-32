@@ -1340,13 +1340,21 @@ input[type="search"]::-webkit-search-results-decoration {
   font-style: normal;
 }
 
+.about-info-text .contacts-phone {
+  left: -15px;
+  text-decoration: underline;
+}
+
+.footer-phone .contacts-phone {
+  right: -15px;
+}
+
 .contacts-phone {
   position: relative;
-  right: -15px;
+  display: inline-block;
   text-decoration: none;
   color: inherit;
-  padding-top: 3px;
-  padding-bottom: 5px;
+  height: 27px;
   padding-left: 15px;
   padding-right: 15px;
 }
