@@ -1,0 +1,23 @@
+{
+  "name": "1924739-device-32",
+  "version": "1.0.0",
+  "description": "Study project",
+  "main": ".stylelintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ant-druha/1924739-device-32.git"
+  },
+  "author": "andrey.dernov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ant-druha/1924739-device-32/issues"
+  },
+  "homepage": "https://github.com/ant-druha/1924739-device-32#readme",
+  "devDependencies": {
+    "linthtml-config-htmlacademy": "^1.0.3",
+    "stylelint-config-htmlacademy": "^0.1.10"
+  }
+}
