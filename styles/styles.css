@@ -472,6 +472,7 @@ header::before {
 .site-search-form {
   display: flex;
   width: 516px;
+  min-height: 40px;
   position: relative;
 }
 
@@ -495,7 +496,7 @@ header::before {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  height: 100%;
+  min-height: 40px;
   width: 160px;
   padding: 8px;
   margin: 0;
@@ -511,7 +512,7 @@ header::before {
   min-width: 140px;
   /*todo otherwise in safari the "search" input width and height smaller on the size of the border width. Why?*/
   width: 356px;
-  height: 100%;
+  min-height: 40px;
   padding: 0;
   padding-left: 50px;
   padding-top: 8px;
