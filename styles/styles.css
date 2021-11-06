@@ -2097,6 +2097,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 13px;
   padding-right: 41px;
   appearance: none;
+  -webkit-appearance: none;
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
