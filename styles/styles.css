@@ -41,6 +41,7 @@ html {
 }
 
 body {
+  min-width: 1160px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
