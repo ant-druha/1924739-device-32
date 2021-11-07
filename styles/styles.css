@@ -458,7 +458,6 @@ header::before {
 .user-menu-item:nth-child(2) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 257px;
   margin-left: 20px;
   margin-right: 2px;
@@ -698,6 +697,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .logout-link {
   opacity: .3;
+  margin-left: -16px;
 }
 
 .main-menu-link {
