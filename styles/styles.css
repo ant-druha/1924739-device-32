@@ -838,10 +838,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .main-menu-link:hover::after {
   content: "";
   position: absolute;
-  width: 125px;
   height: 2px;
   bottom: 7px;
   left: 20px;
+  right: 20px;
   background-color: #000000;
 }
 
