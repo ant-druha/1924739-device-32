@@ -619,7 +619,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .user-menu-link {
-  display: flex;
+  display: block;
   align-items: baseline;
   padding-top: 8px;
   padding-bottom: 8px;
