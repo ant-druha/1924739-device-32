@@ -1904,6 +1904,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
   width: 180px;
   min-height: 40px;
+  height: fit-content;
   top: 0;
   left: 0;
   right: 0;
@@ -2115,6 +2116,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-bottom: 7px;
   padding-left: 13px;
   padding-right: 41px;
+  /*noinspection Stylelint*/
   -webkit-appearance: none;
   appearance: none;
   background-image: url("../img/select-arrow.svg");
