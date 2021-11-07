@@ -1681,6 +1681,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .footer-navigation-item {
   width: 148px;
+  word-wrap: break-word;
   margin-right: 7px;
 }
 
@@ -2450,7 +2451,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .pagination-number {
   width: 38px;
-  height: 38px;
+  min-height: 38px;
+  word-wrap: break-word;
   text-align: center;
   line-height: 28px;
   border: 5px solid transparent;
@@ -2473,7 +2475,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .pagination-link-prev,
 .pagination-link-next {
   border: 5px solid rgba(0, 0, 0, 0);
-  padding: 21px;
+  padding-top: 21px;
+  padding-bottom: 20px;
 }
 
 .pagination-link-prev {
