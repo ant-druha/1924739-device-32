@@ -1556,7 +1556,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #000000;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 10px;
   margin-top: 0;
   margin-bottom: 51px;
   margin-left: auto;
@@ -2443,6 +2443,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: inline-block;
   margin-left: auto;
   align-self: center;
+  word-wrap: break-word;
+  max-width: 80px;
 }
 
 .catalog-pagination {
