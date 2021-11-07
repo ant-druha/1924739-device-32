@@ -2054,6 +2054,7 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-row: 1/2;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #ebebeb;
 }
 
