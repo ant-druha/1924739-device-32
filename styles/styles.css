@@ -313,6 +313,7 @@ header::before {
 .cart-product-delete-button {
   position: relative;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
