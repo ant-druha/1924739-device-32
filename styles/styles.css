@@ -536,6 +536,11 @@ figure {
   color: rgba(0, 0, 0, 1);
 }
 
+.input-site-search:disabled {
+  color: #b3b3b3;
+  background-color: rgba(255, 225, 127, 0.2);
+}
+
 .input-site-search::placeholder {
   opacity: inherit;
   color: inherit;
@@ -570,6 +575,12 @@ figure {
   background-color: #000000;
   color: rgba(255, 255, 255, .3);
   border: none;
+}
+
+.button-search:disabled {
+  color: #b3b3b3;
+  background-color: rgba(255, 225, 127, 0.2);
+  cursor: auto;
 }
 
 /* IE 11*/
@@ -1536,6 +1547,11 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #dcdcdc;
 }
 
+.input-email:disabled {
+  color: rgb(250, 249, 249);
+  background-color: rgb(229, 227, 227);
+}
+
 .input-email::placeholder {
   color: rgba(0, 0, 0, .5);
 }
@@ -1579,6 +1595,12 @@ input[type="search"]::-webkit-search-results-decoration {
 .button-newsletter:active {
   background-color: #000000;
   color: rgba(155, 155, 155, .3);
+}
+
+.button-newsletter:disabled {
+  color: #b3b3b3;
+  background-color: rgba(155, 155, 155, 0.3);
+  cursor: auto;
 }
 
 .button-pagination-show-more {
@@ -2176,6 +2198,10 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: none;
 }
 
+.select-control:disabled {
+  opacity: .2;
+}
+
 .catalog-filter-group {
   position: relative;
   margin: 0;
@@ -2324,6 +2350,12 @@ input[type="search"]::-webkit-search-results-decoration {
   border-color: #af4fff;
 }
 
+
+.control-input:disabled + .control-mark,
+.control-input:disabled ~ .control-label {
+  opacity: .2;
+}
+
 .control:active {
   opacity: .2;
 }
@@ -2412,6 +2444,12 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: #ebebeb;
   border-color: #af4fff;
   color: #af4fff;
+}
+
+.range-toggle:disabled {
+  border: 2px solid rgba(166, 166, 166, 0.21);
+  background-color: #efefef;
+  cursor: auto;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -2727,6 +2765,13 @@ input[type="search"]::-webkit-search-results-decoration {
   border: none;
 }
 
+.button-shipping-request:disabled {
+  color: #fffdfd;
+  opacity: .3;
+  cursor: auto;
+  background-color: rgb(255, 199, 0);
+}
+
 .field-group {
   display: flex;
   flex-direction: column;
@@ -2754,6 +2799,11 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-left: 20px;
   border: none;
   background-color: #f0f0f0;
+}
+
+.shipping-request-form .input-text:disabled {
+  color: #fffdfd;
+  background-color: rgba(239, 239, 239, 0.3);
 }
 
 .shipping-request-form .input-text::placeholder {
@@ -2850,6 +2900,12 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: bold;
 }
 
+.form-info-button:disabled {
+  color: #b2b2b2;
+  background-color: rgba(255, 225, 127, 0.33);
+  cursor: auto;
+}
+
 .form-info-button-popover {
   display: none;
   z-index: 1;
@@ -2937,6 +2993,12 @@ input[type="number"] {
 
 .input-number-button:active .button-icon {
   opacity: .1;
+}
+
+.input-number-button:disabled {
+  color: #fffdfd;
+  background-color: rgba(239, 239, 239, 0.3);
+  cursor: auto;
 }
 
 .button-minus {
