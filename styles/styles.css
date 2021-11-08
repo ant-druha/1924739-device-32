@@ -1955,11 +1955,8 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 360px;
   display: grid;
   grid-template-columns: min-content auto;
-  /*todo: if fixed 380px height is not set then
-   'product-card-image-link' link content is
-   higher than image height. Why?*/
   grid-template-rows: 380px min-content;
-  row-gap: 32px;
+  row-gap: 30px;
 }
 
 .product-card-item:hover .product-card-image {
@@ -2046,7 +2043,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-filter::before {
   content: "";
   position: absolute;
-  top: 71px;
+  top: 70px;
   left: 60px;
   height: 2px;
   width: 200px;
@@ -2063,7 +2060,7 @@ input[type="search"]::-webkit-search-results-decoration {
   margin: 0;
   padding-left: 60px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 
 .catalog-sorting-title {
@@ -2090,7 +2087,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-sorting-type {
   display: flex;
   align-items: center;
-  margin-left: 72px;
+  margin-left: 70px;
   margin-right: auto;
   background-color: #ebebeb;
 }
@@ -2102,12 +2099,14 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .sort-up {
+  background-position: center left;
   background-image: url("../img/sort-down.svg");
   transform: rotate(180deg);
 }
 
 .sort-down {
   background-image: url("../img/sort-down.svg");
+  background-position: center right;
 }
 
 .sort-icon {
@@ -2117,7 +2116,6 @@ input[type="search"]::-webkit-search-results-decoration {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: center;
   opacity: .2;
 }
 
@@ -2148,7 +2146,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-overflow: ellipsis;
   padding-top: 4px;
   padding-bottom: 7px;
-  padding-left: 13px;
+  padding-left: 0;
   padding-right: 41px;
   /*noinspection Stylelint*/
   -webkit-appearance: none;
@@ -2181,7 +2179,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .catalog-filter-group {
   position: relative;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
   padding: 0;
   border: none;
 }
@@ -2201,16 +2199,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .catalog-filter-group.price-group {
-  margin-top: 83px;
-  padding-bottom: 36px;
+  margin-top: 84px;
+  padding-bottom: 32px;
 }
 
 .catalog-filter-group.color-group {
-  padding-bottom: 45px;
+  padding-bottom: 30px;
 }
 
 .catalog-filter-group.bt-group {
-  padding-bottom: 38px;
+  padding-bottom: 20px;
 }
 
 .catalog-filter-group-title {
@@ -2218,17 +2216,21 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 
 .price-group .catalog-filter-group-title {
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .catalog-filter-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.catalog-filter-item {
+  margin-bottom: 10px;
 }
 
 .range-scale {
@@ -2463,6 +2465,7 @@ input[type="search"]::-webkit-search-results-decoration {
   grid-row: 2/3;
   text-decoration: none;
   color: #000000;
+  margin-top: 3px;
 }
 
 .product-card-title {
@@ -2483,7 +2486,8 @@ input[type="search"]::-webkit-search-results-decoration {
   text-align: right;
   display: inline-block;
   margin-left: auto;
-  align-self: center;
+  align-self: flex-start;
+  margin-top: 5px;
   word-wrap: break-word;
   max-width: 80px;
 }
