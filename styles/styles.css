@@ -2092,7 +2092,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-transform: uppercase;
   max-width: 310px;
   margin: 0;
-  margin-right: 52px;
+  margin-right: 36px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -2168,7 +2168,7 @@ input[type="search"]::-webkit-search-results-decoration {
   text-overflow: ellipsis;
   padding-top: 4px;
   padding-bottom: 7px;
-  padding-left: 0;
+  padding-left: 13px;
   padding-right: 41px;
   /*noinspection Stylelint*/
   -webkit-appearance: none;
