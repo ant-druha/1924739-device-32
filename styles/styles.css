@@ -53,17 +53,6 @@ body {
   background-color: #ffffff;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-}
-
-figure {
-  margin: 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1120,6 +1109,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .categories-list-item-link:hover .category-background {
   background-color: #ffc700;
+}
+
+.category-figure {
+  margin: 0;
 }
 
 .categories-list-item-link:focus {
