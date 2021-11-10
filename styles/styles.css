@@ -510,7 +510,6 @@ figure {
   position: relative;
   flex-grow: 1;
   min-width: 140px;
-  /*todo otherwise in safari the "search" input width and height smaller on the size of the border width. Why?*/
   width: 356px;
   height: 40px;
   padding: 0;
@@ -753,7 +752,6 @@ input[type="search"]::-webkit-search-results-decoration {
   align-content: flex-start;
   min-height: 180px;
   top: 100%;
-  /*todo: how to properly align it relative to container? */
   left: -39.5px;
   padding: 0;
   padding-left: 43px;
@@ -877,7 +875,6 @@ input[type="search"]::-webkit-search-results-decoration {
 .product-card-annotation {
   display: none;
   position: relative;
-  /*align-items: center;*/
   grid-template-columns: min-content auto;
   column-gap: 200px;
   grid-template-rows: min-content min-content min-content min-content;
@@ -1570,7 +1567,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-right: none;
 }
 
-/* .invalid class in case of validation errors */
+/* add 'invalid' class in case of validation errors */
 .input-email.invalid {
   border-color: #ff3d3d;
 }
@@ -1703,7 +1700,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .page-footer {
-  /*display: flex;*/
   min-width: 1160px;
   color: #ffffff;
   background: #444444;
@@ -1982,9 +1978,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .product-card-item:hover .product-card-image {
-  /* todo: what is the
-      background: linear-gradient(0deg, rgba(240, 240, 240, 0.8), rgba(240, 240, 240, 0.8)), url(.jpg);
-      in figma and how to set it? */
   opacity: .3;
 }
 
@@ -2335,12 +2328,10 @@ input[type="search"]::-webkit-search-results-decoration {
   opacity: 1;
 }
 
-/*.control:hover .control-input[type="checkbox"]:checked + .control-mark {*/
 .control:hover .control-input:checked + .control-mark {
   opacity: .5;
 }
 
-/*.control:hover .control-input[type="checkbox"]:checked ~ .control-label {*/
 .control:hover .control-input:checked ~ .control-label {
   opacity: .5;
 }
