@@ -837,13 +837,13 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 50px;
   height: 50px;
   border-radius: 50px;
-  background-image: url("../img/catalog_expand_20.svg");
+  background-image: url("../img/catalog-expand-20.svg");
   background-position: center;
   background-color: transparent;
 }
 
 .main-menu-item:first-child .main-menu-link:hover::after {
-  background-image: url("../img/catalog_expand.svg");
+  background-image: url("../img/catalog-expand.svg");
   background-color: transparent;
 }
 
@@ -1048,7 +1048,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services-list-item-image-delivery::after {
-  content: url("../img/service_delivery_man.svg");
+  content: url("../img/service-delivery-man.svg");
   position: absolute;
   width: 136px;
   height: 164px;
@@ -1057,7 +1057,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services-list-item-image-credit::after {
-  content: url("../img/service_credit.svg");
+  content: url("../img/service-credit.svg");
   position: absolute;
   width: 156px;
   height: 188px;
@@ -1066,7 +1066,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .services-list-item-image-warranty::after {
-  content: url("../img/service_warranty.svg");
+  content: url("../img/service-warranty.svg");
   position: absolute;
   width: 171px;
   height: 195px;
@@ -1638,7 +1638,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   width: 14px;
   height: 14px;
-  background-image: url("../img/check_mark_big.svg");
+  background-image: url("../img/check-mark-big.svg");
   left: -34px;
   top: 50%;
   margin-top: -7px;
@@ -2483,7 +2483,7 @@ input[type="search"]::-webkit-search-results-decoration {
   height: 60px;
   right: 27px;
   top: 27px;
-  background-image: url("../img/badge_new.svg");
+  background-image: url("../img/badge-new.svg");
 }
 
 .product-card-title-link {
