@@ -1596,11 +1596,16 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .button-pagination-show-more {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
   width: 760px;
   height: 55px;
   color: #000000;
