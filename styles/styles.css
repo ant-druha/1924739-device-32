@@ -739,20 +739,22 @@ body {
   display: none;
   flex-wrap: wrap;
   align-content: flex-start;
+  line-height: 18px;
   min-height: 180px;
   top: 100%;
   left: -39.5px;
   padding: 0;
   padding-left: 43px;
-  padding-top: 33px;
-  padding-bottom: 50px;
+  padding-top: 29px;
+  padding-bottom: 32px;
   margin: 0;
   background-color: #ffe17f;
   list-style-type: none;
 }
 
 .main-submenu-item {
-  margin-right: 10px;
+  margin-right: 12px;
+  min-width: 190px;
 }
 
 .main-submenu:hover,
@@ -765,6 +767,10 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.main-submenu-list-item {
+  margin-bottom: 6px;
 }
 
 .main-submenu-link {
