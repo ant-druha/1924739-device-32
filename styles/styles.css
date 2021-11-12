@@ -1075,8 +1075,8 @@ body {
   position: absolute;
   width: 156px;
   height: 188px;
-  right: 64px;
-  top: 14px;
+  right: 70px;
+  top: -8px;
 }
 
 .services-list-item-image-warranty::after {
@@ -1084,8 +1084,8 @@ body {
   position: absolute;
   width: 171px;
   height: 195px;
-  right: 64px;
-  top: 14px;
+  right: 47px;
+  top: -8px;
 }
 
 .services-image {
