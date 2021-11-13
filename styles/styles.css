@@ -1905,7 +1905,7 @@ body {
 
 .main-header-inner-container {
   margin-left: 60px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .catalog-right-column {
@@ -2103,7 +2103,7 @@ body {
   margin: 0;
   padding-left: 60px;
   padding-top: 25px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
 }
 
 .catalog-sorting-title {
@@ -2115,7 +2115,7 @@ body {
   margin: 0;
   margin-right: 36px;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 
 .sorting-header-container {
@@ -2229,7 +2229,7 @@ body {
 .catalog-filter-group {
   position: relative;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   padding: 0;
   border: none;
 }
@@ -2239,6 +2239,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
+  transform: translateY(-100%);
   height: 2px;
   width: 100%;
   background-color: #000000;
@@ -2309,7 +2310,7 @@ body {
 .toggle-min {
   left: 0;
   top: 0;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
 }
 
 .toggle-max {
@@ -2525,7 +2526,8 @@ body {
   grid-row: 2/3;
   text-decoration: none;
   color: #000000;
-  margin-top: 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 .product-card-title {
