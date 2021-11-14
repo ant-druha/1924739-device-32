@@ -709,6 +709,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   max-width: 270px;
+  height: 100%;
   padding-top: 14px;
   padding-bottom: 15px;
   padding-right: 17px;
