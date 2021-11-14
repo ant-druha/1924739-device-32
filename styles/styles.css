@@ -1220,11 +1220,12 @@ body {
   margin-bottom: 58px;
 }
 
-.shipping-info {
+.shipping-info-link {
   position: relative;
   display: flex;
   width: 1160px;
   align-items: center;
+  text-decoration: none;
   min-height: 100px;
   margin-top: 0;
   margin-bottom: 97px;
@@ -1233,41 +1234,38 @@ body {
   background-color: #f0f0f0;
 }
 
-.shipping-info-left-column {
-  position: relative;
+.shipping-info-link::before {
+  content: "";
   display: inline-block;
   width: 125px;
   height: 100px;
   background-color: #ffe17f;
-  background-repeat: no-repeat;
-  background-size: 47px 31px;
-  background-position: center;
 }
 
 .shipping-info-icon {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
   fill: #000000;
 }
 
-.shipping-info-info .shipping-info-icon {
+.shipping-info-icon.car-icon {
+  transform: translate(-50%, -50%);
+  left: 62px;
+}
+
+.shipping-info-icon.info-info-icon {
+  right: 53px;
+  transform: translate(50%, -50%);
   opacity: .3;
+  z-index: 1;
 }
 
-.shipping-info-link {
-  display: block;
-  text-decoration: none;
-}
-
-.shipping-info-link:hover .shipping-info {
+.shipping-info-link:hover {
   background: #ebebeb;
 }
 
-.shipping-info-link:hover .shipping-info-left-column {
+.shipping-info-link:hover::before {
   background-color: #ffc700;
 }
 
@@ -1275,11 +1273,11 @@ body {
   opacity: 1;
 }
 
-.shipping-info-link:hover .shipping-info-info {
+.shipping-info-link:hover::after {
   background-color: #dcdcdc;
 }
 
-.shipping-info-link:focus .shipping-info {
+.shipping-info-link:focus {
   outline: 5px solid #af4fff;
 }
 
@@ -1291,11 +1289,12 @@ body {
   opacity: .3;
 }
 
-.shipping-info-link:active .shipping-info-info {
+.shipping-info-link:active::after {
   background-color: #dcdcdc;
 }
 
-.shipping-info-info {
+.shipping-info-link::after {
+  content: "";
   position: absolute;
   width: 40px;
   height: 40px;
