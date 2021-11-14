@@ -1109,10 +1109,11 @@ body {
 }
 
 .categories {
-  margin-bottom: 72px;
+  margin-bottom: 51px;
 }
 
 .categories-list-item-link {
+  display: block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1125,27 +1126,23 @@ body {
   background-color: #ffc700;
 }
 
-.category-figure {
-  margin: 0;
-}
-
 .categories-list-item-link:focus {
   outline: none;
 }
 
-.categories-list-item-link:focus .category-background {
-  border: 5px solid #af4fff;
+.categories-list-item-link:focus .category-background::after {
+  box-shadow: inset 0 0 0 5px #af4fff;
 }
 
-.categories-list-item-link:focus .categories-figcaption {
+.categories-list-item-link:focus .category-name {
   color: #af4fff;
 }
 
-.categories-list-item-link:active .category-icon {
+.categories-list-item-link:active .category-background::after {
   opacity: .3;
 }
 
-.categories-list-item-link:active .categories-figcaption {
+.categories-list-item-link:active .category-name {
   opacity: .3;
   color: #000000;
 }
@@ -1163,18 +1160,56 @@ body {
   column-gap: 40px;
 }
 
-.categories-figcaption {
+.category-name {
   width: 160px;
 }
 
 .category-background {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 160px;
   height: 160px;
   margin-bottom: 33px;
   background-color: #ffe17f;
+}
+
+.category-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.category-background.align-bottom::after {
+  background-position: center bottom;
+}
+
+
+.category-background.vr::after {
+  background-image: url("../img/category-vr.svg");
+}
+
+.category-background.mono::after {
+  background-image: url("../img/category-monopod.svg");
+}
+
+.category-background.camera::after {
+  background-image: url("../img/category-camera.svg");
+}
+
+.category-background.fit-bracelet::after {
+  background-image: url("../img/category-fit-bracelet.svg");
+}
+
+.category-background.smart-watch::after {
+  background-image: url("../img/category-smart-watch.svg");
+}
+
+.category-background.copter::after {
+  background-image: url("../img/category-copter.svg");
 }
 
 .category-background.align-bottom {
