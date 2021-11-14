@@ -1003,6 +1003,12 @@ body {
   min-width: 100px;
 }
 
+.selfi .product-card-feature-value {
+  margin-right: 75px;
+  min-width: unset;
+  max-width: 110px;
+}
+
 /*noinspection CssOverwrittenProperties,Stylelint*/
 .services {
   min-width: 1160px;
@@ -1538,16 +1544,16 @@ body {
   transform: rotate(180deg);
 }
 
-.slider-controls.low .slider-button-prev {
+.slider-controls.selfi .slider-button-prev {
   background-image: url("../img/left-tallest-arrow.svg");
 }
 
-.slider-controls.low .slider-button-next {
+.slider-controls.selfi .slider-button-next {
   background-image: url("../img/left-tallest-arrow.svg");
   transform: rotate(180deg);
 }
 
-.slider-controls.low {
+.slider-controls.selfi {
   top: 61%;
 }
 
