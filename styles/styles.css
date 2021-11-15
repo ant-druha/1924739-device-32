@@ -2625,11 +2625,12 @@ body {
 }
 
 .pagination-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 38px;
   min-height: 38px;
   word-wrap: break-word;
-  text-align: center;
-  line-height: 28px;
   border: 5px solid transparent;
 }
 
@@ -2690,8 +2691,6 @@ body {
 }
 
 .pagination-item {
-  font-size: 16px;
-  line-height: 19px;
   font-family: "Rubik", sans-serif;
   font-weight: normal;
   color: rgb(68, 68, 68, 0.3);
